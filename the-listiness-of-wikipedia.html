@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="::: {#notebook .border-box-sizing tabindex=&#34;-1&#34;} ::: {#notebook-container .container} ::: {.cell .border-box-sizing .text_cell .rendered} ::: {.prompt .input_prompt} View this report with the...">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://notconfusing.com/favicon.ico">
+
+        <title>The Listiness of Wikipedia - notconfusing.com</title>
+
+        <!-- Stylesheets -->
+        <link href="https://notconfusing.com/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/fonts.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/nest.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container gradient">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="https://notconfusing.com/"><img class="mr20" src="https://notconfusing.com/extra/logo.svg" alt="logo">notconfusing.com</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="https://notconfusing.com/">About</a>
+                                <a href="https://notconfusing.com/category/essays">Essays</a>
+                                <a href="https://notconfusing.com/pages/research.html">Research</a>
+                                <a href="https://notconfusing.com/category/blog">Other thoughts</a>
+                                <a href="https://notconfusing.com/category/hacking">Hacking</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">The Listiness of Wikipedia</h1>
+                      <p class="header-date">By <a href="https://notconfusing.com/author/max.html">max</a>, Tue 22 April 2014, in category <a href="https://notconfusing.com/category/hacking.html">Hacking</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <p>::: {#notebook .border-box-sizing tabindex="-1"}
+::: {#notebook-container .container}
+::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+View this report with the <a href="http://nbviewer.ipython.org/github/notconfusing/listiness/blob/master/Listiness.ipynb">Ipython Notebook Viewer</a> (where it looks best).
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+The Listiness of Wikipedia<a class="anchor-link" href="#The-Listiness-of-Wikipedia">¶</a> {#The-Listiness-of-Wikipedia}</p>
+<hr>
+<p>:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+Although it was only an aside, an answer of "What is a Reference work?" caught my attention at UC Berkeley iSchool's <a href="http://www.ischool.berkeley.edu/newsandevents/events/ias/20140321">March 21st Friday Afternoon Seminar by Michael Buckland</a>. One possible answer suggested was: works that are over 80% list.</p>
+<p><a href="https://notconfusing.com/images/uploads/2014/04/marciabatesfig1.png"><img alt="marciabatesfig1" class="wp-image-486 size-medium" src="https://notconfusing.com/images/uploads/2014/04/marciabatesfig1.png" style="width:300px !important"></a> Bates' classification of References works search patterns.</p>
+<p>That definition, although seeming a bit short, was actually serious suggestion published by Marcia Bates in 1984. [Bates, Marcia J. "What Is a Reference Book: A Theoretical and Empirical Analysis." RQ 26 (Fall 1986): 37-57] This is an elegant solution in my opinion as a way to define reference works because although heuristic, it's entirely quantitative. Still necessary though, is a definition of list. According to Bates every book is a certain percentage list. Consider a classical monograph, it probably has a table of contents, or index - which is a list structure.</p>
+<p>At this point in reading, I realised that it would be simple identify what parts of Wikipedia articles are list. And so, we could determine the percentage list - or the "listiness" of - each Wikipedia article.
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}</p>
+<h3 id="Method">Method<a class="anchor-link" href="#Method">¶</a></h3>
+<p>:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+Analysing a May 2014 copy of English Wikipedia, we look at the listiness of all articles in the main namespace. To do this I used the <code>xml_dump</code> library from the excellent <a href="https://pypi.python.org/pypi/mediawiki-utilities/0.2.1">mediawiki-utilities</a> by [<a href="https://twitter.com/halfak">\@halfak</a>]{.citation}.</p>
+<p>In <a href="https://www.wikidata.org/wiki/Q826308">wikitext</a> lists are identified, by the prepending of a line with the characters __*__ (unordered list) and <strong>#</strong> (numbered list). Additionally there are Infoboxes, which use | (pipe character) and tables whose rows begin with |- (pipe dash). What percentage of lines begin with any of these characters therefore determine the share of list of an article, or the "listiness" as I am now coining it.</p>
+<p>We do not allow redirect pages - pages with a starting '#' character and are one line long. Those pages which are not redirects, we term 'canonical pages'. We do not allow "talk" pages either.</p>
+<p>So for instance, we can look at the statistics of each of these different line-starting characters. Below are the mean number of these line-startings per page.
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}</p>
+<h3 id="Results">Results<a class="anchor-link" href="#Results">¶</a></h3>
+<p>:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [3]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    canon_description = canonical.describe()
+    canon_description.loc[['mean','std']]
+:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+::: {.output}
+::: {.output_area}
+::: {.prompt .output_prompt}
+Out[3]:
+:::</p>
+<p>::: {.output_html .rendered_html .output_subarea .output_pyout}
+::: {style="max-height: 1000px; max-width: 1500px; overflow: auto;"}
+         *          #         |-         |           total</p>
+<hr>
+<p>mean   6.660130    0.457347   3.392566    29.755385    2284.055053
+  std    33.667805   7.173435   24.983288   124.254805   4120.072758</p>
+<p>2 rows × 5 columns
+:::
+:::
+:::
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+We read this as the mean average number of undorded list items per page is 6.6, the number of orderer list items per page is 0.45 etc. These number seem reasonable, and commensurate with casual browsing experience. However we also see that the average number of lines per article is 2284, which seems very high. But as you can see the standard deviation for total lines is very large too. That means there are some extremely long articles out there, especailly when considering an article I wrote at recently is only 24 lines long! Although, to be sure, all lines are not created equally.</p>
+<p>Now we are in a perfect place to start looking at listiness distributions. Let's visualise a histogram of the listinesses of all the pages. This first histogram just considers the classical ordered and unordered lists.
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [5]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    show_list_plot()
+:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+<a href="https://notconfusing.com/images/uploads/2014/04/Listiness1.png"><img alt="Listiness1" class="alignnone size-full wp-image-565" src="https://notconfusing.com/images/uploads/2014/04/Listiness1.png" style="width:531px !important"></a>
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+Quite clearly we can see a power law distribution. Lets recall that 80% listiness is Bates' threshhold for considering a book a reference book. In our case lets see how many articles are at least 80% listy.
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [6]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    canonical[canonical['*and#per'] &gt;= 0.8].shape[0] / float(canonical.shape[0])
+:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+::: {.output}
+::: {.output_area}
+::: {.prompt .output_prompt}
+Out[6]:
+:::</p>
+<p>::: {.output_text .output_subarea .output_pyout}
+    0.0032001019048792404
+:::
+:::
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+It's 0.32%, or about three-tenths of one percent of articles are 80% or more listy when considering ordered and unordered lists.</p>
+<p>Now lets allow for charts and infoboxes in our analysis. To eliminate confusion, pages like <a href="http://en.wikipedia.org/wiki/List_of_feminists">List of Feminists</a> is actually mainly a table! In our terminology it might be called "Table of Feminists", althought the "See Also" section at the end is a proper list.</p>
+<p>Now we allow table cells and infoboxes that exist to come into our listiness calculations. This produces a new picture.
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [8]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    show_list_and_table_plot()
+:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+<a href="https://notconfusing.com/images/uploads/2014/04/Listiness2.png"><img alt="Listiness2" class="alignnone size-full wp-image-566" src="https://notconfusing.com/images/uploads/2014/04/Listiness2.png" style="width:531px !important"></a>
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+Right away a noticeable change has occurred in the distribution. One can make out a Gaussian distribution centred at about 50% listiness. Also the scale has changed, with about half of those articles which were previously 0% listy, becoming listy. Just visually we see that percentage of lines that are contributed to by tables and infoboxes, are appreciable at a large level. In fact, if we find our percentage of articles that exceed the 80% listiness threshold under the table and infobox definition, now we have:
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [9]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    canonical[canonical['allper'] &gt;= 0.8].shape[0] / float(canonical.shape[0])
+:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+::: {.output}
+::: {.output_area}
+::: {.prompt .output_prompt}
+Out[9]:
+:::</p>
+<p>::: {.output_text .output_subarea .output_pyout}
+    0.03052258792303092
+:::
+:::
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+... about 3% of all articles. This represents an order of magnitude increase.</p>
+<p>Now we have such a figure, so what? By itself I'm not sure if we can draw any conclusions about Wikipedia being very listy. It would be instructive to compare this to other encyclopedias or libraries. You could measure whatever of Google Books is OCR'd, if you had access to it. If anyone knows of any comparable statistics please get in touch.
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}</p>
+<h3 id="More-curiosities">More curiosities<a class="anchor-link" href="#More-curiosities">¶</a></h3>
+<p>:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+To understand more about listy Wikipedia articles there were a few more avenues of inquiry to take. A first stop was to investigate if the list and table types correlated with each other.
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [2]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    canonical.corr()
+:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+::: {.output}
+::: {.output_area}
+::: {.prompt .output_prompt}
+Out[2]:
+:::</p>
+<p>::: {.output_html .rendered_html .output_subarea .output_pyout}
+::: {style="max-height: 1000px; max-width: 1500px; overflow: auto;"}
+          *          #          |-         |          total</p>
+<hr>
+<p>*      1.000000    0.016075    0.049516    0.045971    -0.093864
+  #      0.016075    1.000000    0.019311    0.023440    -0.031146
+  |-     0.049516    0.019311    1.000000    0.764544    -0.045862
+  |      0.045971    0.023440    0.764544    1.000000    -0.093092
+  total   -0.093864   -0.031146   -0.045862   -0.093092   1.000000</p>
+<p>5 rows × 5 columns
+:::
+:::
+:::
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+None of these correlations are very strong, except for one. The correlation between the number of lines starting with <strong>|-</strong> and <strong>|</strong> is 0.76 over English Wikipedia. To those who know more about Wikitext, this would be obvious because table rows start with <strong>|-</strong>, and the delimiter for each column in that row begins with <strong>|</strong>. However what makes this difficult to disentangle, is that the number of columns may vary, so a 4-column table would have 4 times as many <strong>|</strong> as <strong>|-</strong>. And of course Templates, use <strong>|</strong> character to separate parameters and are not related to tables whatsoever.</p>
+<p>With our correlation matrix being rather uninformative, I wanted to see which where the most highly occurring words in the titles of our listiest pages. The left column is the total number of times the word occurs in <em>all</em> page titles. The <em>listiest</em> column is the number of times that word occurs in the titles articles who are 80% listy by the "list and table" definition. Lastly the <em>ratio</em> column is a division of <em>listiest/all</em>. Compare displayed ratio to the ratio of 0.03 which is the composition of total listy articles versus all articles. The table is sorted by the <em>listiest</em> column.
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [74]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    lexemes_combined[lexemes_combined["listiest"] &gt; 150].sort(columns="listiest", ascending=False).head(20)
+:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+::: {.output}
+::: {.output_area}
+::: {.prompt .output_prompt}
+Out[74]:
+:::</p>
+<p>::: {.output_html .rendered_html .output_subarea .output_pyout}
+::: {style="max-height: 1000px; max-width: 1500px; overflow: auto;"}
+                         all      listiest   ratio (listiest/all)</p>
+<hr>
+<p>of                     640540   60163      0.093925
+  list                   92978    34307      0.368980
+  in                     488559   22937      0.046948
+  the                    355866   17071      0.047970
+  –                      31977    10836      0.338869
+  for                    415190   9120       0.021966
+  mens                   23931    5837       0.243910
+  singles                7986     5391       0.675056
+  wikipediaarticles      295972   5358       0.018103
+  season                 41053    5323       0.129662
+  and                    154046   5133       0.033321
+  championships          17045    5121       0.300440
+  at                     47756    5066       0.106081
+  world                  34675    4981       0.143648
+  district               51854    4780       0.092182
+  by                     105340   4673       0.044361
+  team                   36328    4256       0.117155
+  county                 104867   4255       0.040575
+  football               53007    3853       0.072689
+  wikipediawikiproject   183711   3665       0.019950</p>
+<p>20 rows × 3 columns
+:::
+:::
+:::
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+As one might expect, the word "list" is the second most occurring word in titles of the listiest articles. These articles represent 36% of all the articles that have list in their title, which is significantly higher than what we'd expect on with no other information - 3%. Even "in" and "by" some occur slightly more than expected. This should make sense if you've ever browsed a Wikipedia article with a title something like <a href="https://en.wikipedia.org/wiki/List_of_lists_of_lists">"List of [x] by [y]" or "List of [x] in [z]"</a>.</p>
+<p>The remainder of this Top 20 just goes to show how sport fans have chronicled results with great zeal. And the inexplicability of their zeal is an analogue to my curiosity for investigating this topic.</p>
+<p>Contact me with more ideas of question on twitter [[\@notconfusing]]{.citation}(https://twitter.com/notconfusing)‽‽‽</p>
+<p>Find all the code for this analysis at https://github.com/notconfusing/listiness .
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+Start of Supporting Code<a class="anchor-link" href="#Start-of-Supporting-Code">¶</a> {#Start-of-Supporting-Code}</p>
+<hr>
+<p>:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [4]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    import pandas as pd
+    import re
+    import decimal
+    import string</p>
+<div class="highlight"><pre><span></span><span class="nf">%pylab</span> <span class="kr">inline</span>
+<span class="n">linestarts</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_table</span><span class="p">(</span><span class="err">&#39;</span><span class="n">linestarts</span><span class="p">.</span><span class="n">txt</span><span class="err">&#39;</span><span class="p">)</span>
+<span class="cp">#somehow the txtfile has an extra column</span>
+<span class="n">del</span> <span class="n">linestarts</span><span class="p">[</span><span class="n">u</span><span class="err">&#39;</span><span class="nl">Unnamed</span><span class="p">:</span> <span class="mi">6</span><span class="err">&#39;</span><span class="p">]</span>
+<span class="cp">#The redirect condition is that there is only one line and it began with a &quot;#&quot;</span>
+<span class="n">redir_cond</span> <span class="o">=</span> <span class="p">(</span><span class="n">linestarts</span><span class="p">[</span><span class="err">&#39;</span><span class="n">total</span><span class="err">&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">linestarts</span><span class="p">[</span><span class="sc">&#39;#&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">canon_cond</span> <span class="o">=</span> <span class="p">[</span><span class="n">not</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="n">in</span> <span class="n">redir_cond</span><span class="p">]</span>
+<span class="n">redirs</span> <span class="o">=</span> <span class="n">linestarts</span><span class="p">[</span><span class="n">redir_cond</span><span class="p">]</span>
+<span class="n">canonical</span> <span class="o">=</span>  <span class="n">linestarts</span><span class="p">[(</span><span class="n">canon_cond</span><span class="p">)]</span>
+</pre></div>
+
+
+<p>:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+::: {.output}
+::: {.output_area}
+::: {.prompt}
+:::</p>
+<p>::: {.output_subarea .output_stream .output_stdout .output_text}
+    Populating the interactive namespace from numpy and matplotlib
+:::
+:::
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [6]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    canonical['<em>and#per'] = ( canonical['</em>'] + canonical['#'] ) / canonical['total'] 
+    canonical['allper'] = ( canonical['*'] + canonical['#'] + canonical['|'] ) / canonical['total']</p>
+<div class="highlight"><pre><span></span><span class="n">def</span> <span class="n">show_list_plot</span><span class="p">():</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">.</span><span class="mi">5</span><span class="p">))</span>
+    <span class="n">histplot</span> <span class="o">=</span> <span class="n">canonical</span><span class="p">[</span><span class="s1">&#39;*and#per&#39;</span><span class="p">].</span><span class="n">hist</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+    <span class="n">NOPLACES</span> <span class="o">=</span> <span class="nb">decimal</span><span class="p">.</span><span class="nb">Decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">**</span> <span class="mi">0</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">),</span> <span class="p">[</span><span class="nb">decimal</span><span class="p">.</span><span class="nb">Decimal</span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="mi">100</span><span class="p">).</span><span class="n">quantize</span><span class="p">(</span><span class="n">NOPLACES</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="k">in</span> <span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">)])</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Listiness - ordered and unordered lists only&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Article frequency&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Frequency of Article List-Percentages of English Wikipedia&#39;</span><span class="p">)</span>
+
+<span class="n">def</span> <span class="n">show_list_and_table_plot</span><span class="p">():</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">.</span><span class="mi">5</span><span class="p">))</span>
+    <span class="n">histplot</span> <span class="o">=</span> <span class="n">canonical</span><span class="p">[</span><span class="s1">&#39;allper&#39;</span><span class="p">].</span><span class="n">hist</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+    <span class="n">NOPLACES</span> <span class="o">=</span> <span class="nb">decimal</span><span class="p">.</span><span class="nb">Decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">**</span> <span class="mi">0</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">),</span> <span class="p">[</span><span class="nb">decimal</span><span class="p">.</span><span class="nb">Decimal</span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="mi">100</span><span class="p">).</span><span class="n">quantize</span><span class="p">(</span><span class="n">NOPLACES</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="k">in</span> <span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">)])</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Listiness - ordered and undordered lists, tables, and infoboxes&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Article frequency&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Frequency of Article List-Percentages of English Wikipedia&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>:::
+:::
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [67]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    from collections import defaultdict
+    lexeme_freq_all = defaultdict(int)
+    lexeme_freq_list_only = defaultdict(int)</p>
+<div class="highlight"><pre><span></span><span class="n">exclude</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">set</span><span class="p">(</span><span class="n">string</span><span class="p">.</span><span class="n">punctuation</span><span class="p">)</span><span class="w"></span>
+<span class="n">exclude</span><span class="p">.</span><span class="k">add</span><span class="p">(</span><span class="n">u</span><span class="s1">&#39;–&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="n">def</span><span class="w"> </span><span class="n">strip_punct</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="err">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">ls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="nf">lower</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="n">ls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">.</span><span class="k">join</span><span class="p">(</span><span class="n">ch</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">ch</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">ls</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">ch</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">exclude</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ls</span><span class="w"></span>
+
+<span class="k">for</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">canonical</span><span class="o">[</span><span class="n">&#39;page+title&#39;</span><span class="o">]</span><span class="err">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">title</span><span class="o">=</span><span class="nf">str</span><span class="p">(</span><span class="n">title</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">lexeme</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">title</span><span class="p">.</span><span class="n">split</span><span class="p">()</span><span class="err">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">cleaned</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strip_punct</span><span class="p">(</span><span class="n">lexeme</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">#print</span><span class="w"> </span><span class="n">lexeme</span><span class="p">,</span><span class="w"> </span><span class="n">cleaned</span><span class="w"> </span>
+<span class="w">        </span><span class="n">lexeme_freq_all</span><span class="o">[</span><span class="n">cleaned</span><span class="o">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="k">for</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">canonical</span><span class="o">[</span><span class="n">canonical[&#39;allper&#39;</span><span class="o">]</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">0.8</span><span class="err">]</span><span class="o">[</span><span class="n">&#39;page+title&#39;</span><span class="o">]</span><span class="err">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">title</span><span class="o">=</span><span class="nf">str</span><span class="p">(</span><span class="n">title</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">lexeme</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">title</span><span class="p">.</span><span class="n">split</span><span class="p">()</span><span class="err">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">cleaned</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strip_punct</span><span class="p">(</span><span class="n">lexeme</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">lexeme_freq_list_only</span><span class="o">[</span><span class="n">cleaned</span><span class="o">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+
+<span class="n">lexemes_all</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">.</span><span class="n">from_dict</span><span class="p">(</span><span class="k">data</span><span class="o">=</span><span class="n">lexeme_freq_all</span><span class="p">,</span><span class="w"> </span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="n">lexemes_list_only</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">.</span><span class="n">from_dict</span><span class="p">(</span><span class="k">data</span><span class="o">=</span><span class="n">lexeme_freq_list_only</span><span class="p">,</span><span class="w"> </span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="n">lexemes_combined</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lexemes_all</span><span class="p">.</span><span class="k">join</span><span class="p">(</span><span class="n">lexemes_list_only</span><span class="p">,</span><span class="w"> </span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">lsuffix</span><span class="o">=</span><span class="s1">&#39;_all&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">rsuffix</span><span class="o">=</span><span class="s1">&#39;_listiest&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="n">lexemes_combined</span><span class="p">.</span><span class="n">columns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="n">u&#39;all&#39;, u&#39;listiest&#39;</span><span class="o">]</span><span class="w"></span>
+<span class="n">lexemes_combined</span><span class="o">[</span><span class="n">&#39;ratio (listiest/all)&#39;</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lexemes_combined</span><span class="o">[</span><span class="n">&#39;listiest&#39;</span><span class="o">]</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">lexemes_combined</span><span class="o">[</span><span class="n">&#39;all&#39;</span><span class="o">]</span><span class="w"></span>
+</pre></div>
+
+
+<p>:::
+:::
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [70]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    lexemes_combined[lexemes_combined["listiest"] &gt; 150].sort(columns="ratio (listiest/all)", ascending=False).head(16)
+:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+::: {.output}
+::: {.output_area}
+::: {.prompt .output_prompt}
+Out[70]:
+:::</p>
+<p>::: {.output_html .rendered_html .output_subarea .output_pyout}
+::: {style="max-height: 1000px; max-width: 1500px; overflow: auto;"}
+                all    listiest   ratio (listiest/all)</p>
+<hr>
+<p>pri           728    664        0.912088
+  vrh           235    210        0.893617
+  divisional    410    325        0.792683
+  vas           365    279        0.764384
+  gornji        229    167        0.729258
+  filmography   526    371        0.705323
+  secretariat   463    325        0.701944
+  numberone     2394   1675       0.699666
+  singles       7986   5391       0.675056
+  stakes        1149   727        0.632724
+  handicap      342    213        0.622807
+  billboard     740    454        0.613514
+  fia           369    207        0.560976
+  iaaf          718    354        0.493036
+  grade         895    421        0.470391
+  listings      2959   1376       0.465022</p>
+<p>16 rows × 3 columns
+:::
+:::
+:::
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+Research questions:</p>
+<ol>
+<li>What percentage of articles are above 80% list.<ol>
+<li>how does that answer change if we allow tables and infoboxes as well?</li>
+<li>What do the different distributions mean?</li>
+</ol>
+</li>
+<li>What are some top occuring word in the listiest articles?<ol>
+<li>How does inclusion of infoboxes and tables affect this as well?</li>
+</ol>
+</li>
+<li>Are there any strong correllations between the different list types?
+:::
+:::
+:::
+:::
+:::</li>
+</ol>
+
+
+        
+    </div>
+        <!-- /Content -->
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Sitemap</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://notconfusing.com/blog_index.html">Latest posts</a></li>
+                            <li><a href="https://notconfusing.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">Atom Feed</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/notconfusing" target="_blank">Twitter: @notconfusing</a></li>
+                            <li><a href="https://www.linkedin.com/in/notconfusing/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/notconfusing/" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small>CC-BY-SA Max Klein</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

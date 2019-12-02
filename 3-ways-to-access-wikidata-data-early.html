@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Note: This post is quite old. In fact Wikidata can now be accessed &#34;properly&#34; via the Wikidata Query Service (WDQS). However the techniques outlined below still have their advantages. The...">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://notconfusing.com/favicon.ico">
+
+        <title>3 Ways To Access Wikidata Data Until It Can Be Done Properly - notconfusing.com</title>
+
+        <!-- Stylesheets -->
+        <link href="https://notconfusing.com/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/fonts.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/nest.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container gradient">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="https://notconfusing.com/"><img class="mr20" src="https://notconfusing.com/extra/logo.svg" alt="logo">notconfusing.com</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="https://notconfusing.com/">About</a>
+                                <a href="https://notconfusing.com/category/essays">Essays</a>
+                                <a href="https://notconfusing.com/pages/research.html">Research</a>
+                                <a href="https://notconfusing.com/category/blog">Other thoughts</a>
+                                <a href="https://notconfusing.com/category/hacking">Hacking</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">3 Ways To Access Wikidata Data Until It Can Be Done Properly</h1>
+                      <p class="header-date">By <a href="https://notconfusing.com/author/max.html">max</a>, Mon 02 May 2016, in category <a href="https://notconfusing.com/category/hacking.html">Hacking</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <p>Note: This post is quite old. In fact Wikidata can now be accessed "properly" via the <a href="https://query.wikidata.org/">Wikidata Query Service (WDQS).</a> However the techniques outlined below still have their advantages.</p>
+<p>The inaugural <a href="https://meta.wikimedia.org/wiki/Research:Labs2/Hackathons/November_9th,_2013">Wiki Research Hackathon</a> went very well, and I'm affirmed that I feel best when I'm conducting Wiki Research. I was asked to give one of the tech talks of the day about accessing Wikidata data programmatically. Here is an outline of the talk</p>
+<h3>Purpose:</h3>
+<p>We'll be viewing Wikidata as file in its own right for research, not as it's canonical use case of being used in various Wikipedias.</p>
+<h3>Native format:</h3>
+<p>Wikidata is a mostly standard Mediawiki instance except that pages don't store "Wikitext", they store JSON blobs. (If you want to understand more about this abstraction, see then <a href="http://www.mediawiki.org/wiki/Manual:ContentHandler">ContentHandler</a>).</p>
+<h3>Structure of a Wikidata Item:</h3>
+<p>Main entry point of any Wikidata item is a JSON dictionary, that has this form:</p>
+<div class="highlight"><pre><span></span><span class="err">{“</span><span class="n">labels</span><span class="err">”</span><span class="p">:</span> <span class="k">by</span><span class="o">-</span><span class="k">language</span> <span class="k">dictionary</span>
+
+<span class="err">“</span><span class="n">descriptions</span><span class="err">”</span><span class="p">:</span> <span class="k">by</span><span class="o">-</span><span class="k">language</span> <span class="k">dictionary</span>
+
+<span class="err">“</span><span class="n">aliases</span><span class="err">”</span><span class="p">:</span> <span class="k">by</span><span class="o">-</span><span class="k">language</span> <span class="k">dictionary</span>
+
+<span class="err">“</span><span class="n">claims</span><span class="err">”</span><span class="p">:</span> <span class="n">list</span> <span class="k">of</span> <span class="n">property</span> <span class="k">and</span> <span class="k">values</span>
+
+<span class="err">“</span><span class="n">sitelinks</span><span class="err">”</span><span class="p">:</span> <span class="k">by</span><span class="o">-</span><span class="k">language</span> <span class="k">dictionary</span><span class="err">}</span>
+</pre></div>
+
+
+<h3>3 Ways To Access Wikidata:</h3>
+<p>Whether your more comfortable in object-oriented python, parsing large text files, or munging linked data, there is something for you.</p>
+<ul>
+<li>Live, from the API, using <a href="http://www.mediawiki.org/wiki/Manual:Pywikibot/Wikidata">pywikibot</a><ul>
+<li>Read / write</li>
+</ul>
+</li>
+<li>Offline, dumps, using Wikidata Toolkit (wdtk)<ul>
+<li>Newer, shinier, performant Java<ul>
+<li><a href="https://www.mediawiki.org/wiki/Wikidata_Toolkit">https://www.mediawiki.org/wiki/Wikidata_Toolkit</a></li>
+</ul>
+</li>
+<li>Deprecated, slower, unmaintained python "Wikidata Analyzer"<ul>
+<li><a href="https://github.com/mkroetzsch/wda">https://github.com/mkroetzsch/wda</a></li>
+</ul>
+</li>
+<li>Read only</li>
+</ul>
+</li>
+<li>As linked data, entities, via content negotiation<ul>
+<li>Read only</li>
+</ul>
+</li>
+</ul>
+<h3>Using Pywikibot:</h3>
+<p>With pywikibot you get almost full support of the API.<br>
+New classes in the “core” branch<br>
+class WikibasePage(Page):<br>
+class ItemPage(WikibasePage):<br>
+class PropertyPage(WikibasePage):<br>
+class Claim(PropertyPage):<br>
+Using Pywikibot<br>
+Classic pywikibot pagegenerators work.<br>
+#make a generator for all the pages with a property<br>
+en_wikipedia = pywikibot.Site('en', 'wikipedia')<br>
+wikidata = en_wikipedia.data_repository()<br>
+property_page = pywikibot.ItemPage(wikidata, 'Property:P21')<br>
+pages_with_property = property_page.getReferences()</p>
+<h4>Pywikibot example:</h4>
+<p>I've been harvesting Infobox Book across many languages and writing the corresponding properties to Wikidata <a href="https://github.com/notconfusing/harvest_infobox_book">https://github.com/notconfusing/harvest_infobox_book</a>.</p>
+<h3>Using wda</h3>
+<p>[Update: WDA is deprecated and replaced by Wikidata Toolkit, which I explain how to use with code examples <a href="http://notconfusing.com/sex-ratios-in-wikidata-part-iii/" title="Sex Ratios in Wikidata Part III">in this blog post.</a>]{style="font-size: 14pt;"}</p>
+<p>WDA, WikiData Analytics, downloads the official dump and analyzes it offline. Cleverly it uses nightly incremental dumps after about a 10GB first download. It's also written in python, mainly by Markus Kroetzsch.After downloading there is a parser that writes a file called kb.txt. kb.txt stores plaintext triples, one per line giving you something like this.</p>
+<div class="highlight"><pre><span></span><span class="n">Q21</span> <span class="n">link</span> <span class="err">{</span><span class="n">trwiki</span><span class="p">:</span><span class="n">İngiltere</span><span class="err">}</span> <span class="p">.</span>
+<span class="n">Q21</span> <span class="n">link</span> <span class="err">{</span><span class="n">hewiki</span><span class="p">:</span><span class="err">אנגליה}</span> <span class="p">.</span>
+<span class="n">Q21</span> <span class="k">alias</span> <span class="err">{</span><span class="n">en</span><span class="p">:</span><span class="n">ENG</span><span class="err">}</span> <span class="p">.</span>
+<span class="n">Q21</span> <span class="k">alias</span> <span class="err">{</span><span class="k">min</span><span class="p">:</span><span class="n">Inggirih</span><span class="err">}</span> <span class="p">.</span>
+<span class="n">Q21</span> <span class="k">alias</span> <span class="err">{</span><span class="n">sgs</span><span class="p">:</span><span class="n">England</span><span class="err">}</span> <span class="p">.</span>
+<span class="n">Q21</span> <span class="n">P31</span> <span class="n">Q1763527</span> <span class="p">.</span>
+<span class="n">Q21</span> <span class="n">P47</span> <span class="n">Q22</span> <span class="p">.</span>
+<span class="n">Q21</span> <span class="n">P47</span> <span class="n">Q25</span> <span class="p">.</span>
+<span class="n">Q21</span> <span class="n">P41</span> <span class="err">{</span><span class="n">Flag</span> <span class="k">of</span> <span class="n">England</span><span class="p">.</span><span class="n">svg</span><span class="err">}</span> <span class="p">.</span>
+
+<span class="n">I</span> <span class="n">used</span> <span class="n">wda</span> <span class="k">to</span> <span class="k">in</span> <span class="n">my</span> <span class="n">analysis</span> <span class="k">of</span> <span class="n">the</span> <span class="n">most</span> <span class="k">unique</span> <span class="n">Wikipedias</span> <span class="n">according</span> <span class="k">to</span> <span class="n">Wikidata</span><span class="p">.</span>
+</pre></div>
+
+
+<h3>Content Negotiation:</h3>
+<p>You can also access Wikidata as linked data. The build path is:</p>
+<div class="highlight"><pre><span></span><span class="c">https://wikidata.org/entity/&lt;QID&gt;.&lt;format&gt;</span>
+</pre></div>
+
+
+<p>where your choices of format are</p>
+<div class="highlight"><pre><span></span><span class="err">nt</span>
+<span class="err">rdf</span>
+<span class="err">ttl</span>
+</pre></div>
+
+
+<p>Content Negotiaton Example</p>
+<div class="highlight"><pre><span></span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">wikidata</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="nl">Special</span><span class="p">:</span><span class="n">EntityData</span><span class="o">/</span><span class="n">Q42046</span><span class="p">.</span><span class="n">ttl</span><span class="w"> </span><span class="nv">@prefix</span><span class="w"> </span><span class="nl">entity</span><span class="p">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">wikidata</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">entity</span><span class="o">/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="nv">@prefix</span><span class="w"> </span><span class="nl">wikibase</span><span class="p">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">wikidata</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">ontology</span><span class="err">#</span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="nv">@prefix</span><span class="w"> </span><span class="nl">rdfs</span><span class="p">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">w3</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="mi">2000</span><span class="o">/</span><span class="mi">01</span><span class="o">/</span><span class="n">rdf</span><span class="o">-</span><span class="k">schema</span><span class="err">#</span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="nv">@prefix</span><span class="w"> </span><span class="nl">skos</span><span class="p">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">w3</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="mi">2004</span><span class="o">/</span><span class="mi">02</span><span class="o">/</span><span class="n">skos</span><span class="o">/</span><span class="n">core</span><span class="err">#</span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="nv">@prefix</span><span class="w"> </span><span class="k">schema</span><span class="err">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="k">schema</span><span class="p">.</span><span class="n">org</span><span class="o">/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="nv">@prefix</span><span class="w"> </span><span class="k">data</span><span class="err">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">wikidata</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="nl">Special</span><span class="p">:</span><span class="n">EntityData</span><span class="o">/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="nv">@prefix</span><span class="w"> </span><span class="nl">cc</span><span class="p">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">creativecommons</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">ns</span><span class="err">#</span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="nv">@prefix</span><span class="w"> </span><span class="nl">xsd</span><span class="p">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">w3</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="mi">2001</span><span class="o">/</span><span class="n">XMLSchema</span><span class="err">#</span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+
+<span class="nl">entity</span><span class="p">:</span><span class="n">Q42046</span><span class="w"></span>
+<span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="nl">wikibase</span><span class="p">:</span><span class="n">Item</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="nl">rdfs</span><span class="p">:</span><span class="n">label</span><span class="w"> </span><span class="ss">&quot;鬣狗科&quot;</span><span class="nv">@zh</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Hienowate&quot;</span><span class="nv">@pl</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Hiena&quot;</span><span class="nv">@eu</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Hyaenidae&quot;</span><span class="nv">@es</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Hiëna&quot;</span><span class="nv">@af</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Dubuk&quot;</span><span class="nv">@ms</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Hiénafélék&quot;</span><span class="nv">@hu</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Fisi&quot;</span><span class="nv">@sw</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Hüäänlased&quot;</span><span class="nv">@et</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;হায়েনা&quot;</span><span class="nv">@bn</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Hiena&quot;</span><span class="nv">@sq</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Hyaenidae&quot;</span><span class="nv">@br</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Ύαινα&quot;</span><span class="nv">@el</span><span class="w"></span>
+</pre></div>
+
+
+<h3>Conclusion</h3>
+<p>So until <a href="http://en.wikipedia.org/wiki/Wikidata#Phase_3">Phase III</a> there are still some usable options to explore Wikidata for research purposes. However we can still dream of future robust query system. In that dream I like to think of a query system capable of answering "does there exists is a sequence of properties that connects these two Wikidata items?"</p>
+
+
+        
+    </div>
+        <!-- /Content -->
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Sitemap</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://notconfusing.com/blog_index.html">Latest posts</a></li>
+                            <li><a href="https://notconfusing.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">Atom Feed</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/notconfusing" target="_blank">Twitter: @notconfusing</a></li>
+                            <li><a href="https://www.linkedin.com/in/notconfusing/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/notconfusing/" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small>CC-BY-SA Max Klein</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

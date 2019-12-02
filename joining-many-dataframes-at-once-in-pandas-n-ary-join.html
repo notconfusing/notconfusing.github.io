@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="::: {.cell .border-box-sizing .text_cell .rendered} ::: {.prompt .input_prompt} ::: ::: {.inner_cell} ::: {.text_cell_render .border-box-sizing .rendered_html} Joining many DataFrames at once with...">
         <meta name="keywords" content="">
-        <link rel="icon" href="https://notconfusing.com/favicon.ico">
+        <link rel="icon" href="https://notconfusing.github.io/favicon.ico">
 
         <title>Joining many DataFrames at once in Pandas: "n-ary Join" - notconfusing.com</title>
 
         <!-- Stylesheets -->
-        <link href="https://notconfusing.com/theme/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://notconfusing.com/theme/css/fonts.css" rel="stylesheet">
-        <link href="https://notconfusing.com/theme/css/nest.css" rel="stylesheet">
-        <link href="https://notconfusing.com/theme/css/pygment.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/fonts.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/nest.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/pygment.css" rel="stylesheet">
         <!-- /Stylesheets -->
 
         <!-- RSS Feeds -->
@@ -39,14 +39,14 @@
             <div class="container">
                 <div class="header-nav">
                     <div class="header-logo">
-                        <a class="pull-left" href="https://notconfusing.com/"><img class="mr20" src="https://notconfusing.com/extra/logo.svg" alt="logo">notconfusing.com</a>
+                        <a class="pull-left" href="https://notconfusing.github.io/"><img class="mr20" src="https://notconfusing.github.io/extra/logo.svg" alt="logo">notconfusing.com</a>
                     </div>
                     <div class="nav pull-right">
-                                <a href="https://notconfusing.com/">About</a>
-                                <a href="https://notconfusing.com/category/essays">Essays</a>
-                                <a href="https://notconfusing.com/pages/research.html">Research</a>
-                                <a href="https://notconfusing.com/category/blog">Other thoughts</a>
-                                <a href="https://notconfusing.com/category/hacking">Hacking</a>
+                                <a href="https://notconfusing.github.io/">About</a>
+                                <a href="https://notconfusing.github.io/category/essays">Essays</a>
+                                <a href="https://notconfusing.github.io/pages/research.html">Research</a>
+                                <a href="https://notconfusing.github.io/category/blog">Other thoughts</a>
+                                <a href="https://notconfusing.github.io/category/hacking">Hacking</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
               <div class="col-lg-12">
                   <div class="header-content">
                       <h1 class="header-title">Joining many DataFrames at once in Pandas: "n-ary Join"</h1>
-                      <p class="header-date">By <a href="https://notconfusing.com/author/max.html">max</a>, Wed 11 February 2015, in category <a href="https://notconfusing.com/category/hacking.html">Hacking</a></p>
+                      <p class="header-date">By <a href="https://notconfusing.github.io/author/max.html">max</a>, Wed 11 February 2015, in category <a href="https://notconfusing.github.io/category/hacking.html">Hacking</a></p>
                       <div class="header-underline"></div>
                       <div class="clearfix"></div>
                       <p class="pull-right header-tags">
@@ -85,7 +85,7 @@
 ::: {.text_cell_render .border-box-sizing .rendered_html}
 Joining many DataFrames at once with Reduce
 ===========================================</p>
-<p>In my last project I wanted to compare many different Gender Inequality Indexes at once, including the one I had just come up with, called <a href="http://notconfusing.com/preliminary-results-from-wigi-the-wikipedia-gender-inequality-index/" title="Preliminary Results From WIGI, The Wikipedia Gender Inequality Index">"WIGI"</a>. The problem was that the rank and score data for each index was in a separate DataFrame. I need to perform repeated SQL-style <code>join</code>s. In this case I actually only had to join 5 dataframes, for 5 indices. But later, in helping my partner with her research, she came across the same problem needed to join more than 100. In my mind I saw that we wanted to accomplish this n-ary join. Mathematically I wanted this type of operation, which I couldn't find in <code>pandas</code>. <a href="https://notconfusing.com/images/uploads/2015/02/join.jpg"><img alt="join" class="aligncenter wp-image-3729 size-medium" src="https://notconfusing.com/images/uploads/2015/02/join.jpg" style="width:300px !important"></a></p>
+<p>In my last project I wanted to compare many different Gender Inequality Indexes at once, including the one I had just come up with, called <a href="http://notconfusing.com/preliminary-results-from-wigi-the-wikipedia-gender-inequality-index/" title="Preliminary Results From WIGI, The Wikipedia Gender Inequality Index">"WIGI"</a>. The problem was that the rank and score data for each index was in a separate DataFrame. I need to perform repeated SQL-style <code>join</code>s. In this case I actually only had to join 5 dataframes, for 5 indices. But later, in helping my partner with her research, she came across the same problem needed to join more than 100. In my mind I saw that we wanted to accomplish this n-ary join. Mathematically I wanted this type of operation, which I couldn't find in <code>pandas</code>. <a href="https://notconfusing.github.io/images/uploads/2015/02/join.jpg"><img alt="join" class="aligncenter wp-image-3729 size-medium" src="https://notconfusing.github.io/images/uploads/2015/02/join.jpg" style="width:300px !important"></a></p>
 <p>The answer I enjoyed implementing, perhaps because I saw it as this type of repeated operation, is the <code>reduce</code> of functional programming.</p>
 <p>Ok, say we have these two data sets:
 :::
@@ -1785,7 +1785,7 @@ I really like the elegance of this solution. I admit there may be other ways to 
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
                         <div class="footer-title">Sitemap</div>
                         <ul class="list-unstyled">
-                            <li><a href="https://notconfusing.com/blog_index.html">Latest posts</a></li>
+                            <li><a href="https://notconfusing.github.io/blog_index.html">Latest posts</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">

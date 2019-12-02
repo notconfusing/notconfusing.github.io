@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="So you want to upload an image to the cloud with Node.js? Maybe you want a small raspberry pi webcam to take timelapse footage and send it to a server every hour because of its small harddrive....">
         <meta name="keywords" content="">
-        <link rel="icon" href="https://notconfusing.com/favicon.ico">
+        <link rel="icon" href="https://notconfusing.github.io/favicon.ico">
 
         <title>So you want to upload an image to the cloud with Node.js - notconfusing.com</title>
 
         <!-- Stylesheets -->
-        <link href="https://notconfusing.com/theme/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://notconfusing.com/theme/css/fonts.css" rel="stylesheet">
-        <link href="https://notconfusing.com/theme/css/nest.css" rel="stylesheet">
-        <link href="https://notconfusing.com/theme/css/pygment.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/fonts.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/nest.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/pygment.css" rel="stylesheet">
         <!-- /Stylesheets -->
 
         <!-- RSS Feeds -->
@@ -39,14 +39,14 @@
             <div class="container">
                 <div class="header-nav">
                     <div class="header-logo">
-                        <a class="pull-left" href="https://notconfusing.com/"><img class="mr20" src="https://notconfusing.com/extra/logo.svg" alt="logo">notconfusing.com</a>
+                        <a class="pull-left" href="https://notconfusing.github.io/"><img class="mr20" src="https://notconfusing.github.io/extra/logo.svg" alt="logo">notconfusing.com</a>
                     </div>
                     <div class="nav pull-right">
-                                <a href="https://notconfusing.com/">About</a>
-                                <a href="https://notconfusing.com/category/essays">Essays</a>
-                                <a href="https://notconfusing.com/pages/research.html">Research</a>
-                                <a href="https://notconfusing.com/category/blog">Other thoughts</a>
-                                <a href="https://notconfusing.com/category/hacking">Hacking</a>
+                                <a href="https://notconfusing.github.io/">About</a>
+                                <a href="https://notconfusing.github.io/category/essays">Essays</a>
+                                <a href="https://notconfusing.github.io/pages/research.html">Research</a>
+                                <a href="https://notconfusing.github.io/category/blog">Other thoughts</a>
+                                <a href="https://notconfusing.github.io/category/hacking">Hacking</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
               <div class="col-lg-12">
                   <div class="header-content">
                       <h1 class="header-title">So you want to upload an image to the cloud with Node.js</h1>
-                      <p class="header-date">By <a href="https://notconfusing.com/author/max.html">max</a>, Tue 15 November 2016, in category <a href="https://notconfusing.com/category/hacking.html">Hacking</a></p>
+                      <p class="header-date">By <a href="https://notconfusing.github.io/author/max.html">max</a>, Tue 15 November 2016, in category <a href="https://notconfusing.github.io/category/hacking.html">Hacking</a></p>
                       <div class="header-underline"></div>
                       <div class="clearfix"></div>
                       <p class="pull-right header-tags">
@@ -81,7 +81,7 @@
         <h2>So you want to upload an image to the cloud with Node.js?</h2>
 <p>Maybe you want a small raspberry pi webcam to take timelapse footage and send it to a server every hour because of its small harddrive. Maybe you want to build a social network swapping images of Lizard People, and your sever can t handle all the image traffic. Maybe you want to back-up your irreplaceable collection of dead-sea scroll fragments -- it's irreplaceable. You  might want to keep around images or files for many different reasons, and having them publicly accessible in the cloud is better than trying to manage them yourself, for storage and network reasons. This is a tutorial about how to do that. In this tutorial we will be building and inspecting a use case for a web-app I've been working on in which users can post images of items they want to trade.</p>
 <p>Just focusing on the backend, we'll be assuming there's already webpage with a file upload user-interface. What we'll be doing is creating the API endpoint that images can be uploaded to, but will then turn-around and ask a cloud-strorage provider to hold the image for us. We'll also make a square thumbnail version of the image and upload those too. Once both of these images (the full-size and the thumbnail) are in the cloud, we'll return to the web-client a URL of where the images can be found in the cloud.</p>
-<p><img alt="Architectural Overview" class="aligncenter size-full wp-image-4110" src="https://notconfusing.com/images/uploads/2016/11/Untitled-drawing1.png" style="width:958px !important"></p>
+<p><img alt="Architectural Overview" class="aligncenter size-full wp-image-4110" src="https://notconfusing.github.io/images/uploads/2016/11/Untitled-drawing1.png" style="width:958px !important"></p>
 <h2>Choices, choices</h2>
 <p>Let's take a moment to justify the technologies we are using. The first is node.js. There's a Ph.D. student who works at my university researching programming languages who starts all of his presentations with the question: "why on earth does anyone write in node.js?" It's funny the first few times you hear it, and if you're like me who fell in love with python, you might be reticent. But there is some justification here, although some of our processing needs to happen synchronously, but a lot doesn't, so nodeJS's asynchronous-by-default nature will be useful.</p>
 <p>The next question we have to answer is, which cloud storage provider to use. I investigated a couple of candidates, and eventually settled on using Microsoft's Azure, because it came with some excellent sample applications and code that made it easy to get off the ground in an hour. It's not the only one out there though, I also thought about Amazon S3 the popular giant - but its popular enough already. I looked at Google Cloud Services, which does come with node.js wrappers which is nice, but I didn't see any sample applications so it wasn't as dev-friendly as it could have been. I also wanted to consider companies that weren't corporations of sizes I can't even fathom, so I poked around Rackspace's promising offerings, but their documentation was written entirely in cURL exmaples, and we're trying to play this game on easy mode. Lastly, Cloudinary seems like a good service which is more purpose-build for images, not just general storage, and so has a built-in thumbnail API. I wish my colleague had told me about Cloudinary before I'd written this tutorial not after, it may have come out differently.</p>
@@ -95,9 +95,9 @@
 <hr>
 <h2>Set up</h2>
 <p>For this toturial you'll need a Microsoft Azure account. They'll give you \$200 free credit to start off, so go sign-up at <a href="http://portal.azure.com">http://portal.azure.com/</a> without entering a credit card, and setup your "Blob" storage.</p>
-<p><img alt="Make a new Storage Account" class="size-full wp-image-4112" src="https://notconfusing.com/images/uploads/2016/11/azure1.png" style="width:726px !important"> Make a new Storage Account</p>
+<p><img alt="Make a new Storage Account" class="size-full wp-image-4112" src="https://notconfusing.github.io/images/uploads/2016/11/azure1.png" style="width:726px !important"> Make a new Storage Account</p>
 <p>Remember these credentials for your application. When everything is set up you'll see your container like this:</p>
-<p><img alt="There can be many containers, which contain blobs. Each blob has a deterministic URL. Note, the Key icon which contains your secret key needed for later on." class="size-large wp-image-4113" src="https://notconfusing.com/images/uploads/2016/11/azure3.png" style="width:474px !important"> There can be many containers, which contain blobs. Each blob has a deterministic URL. Note, the Key icon which contains your secret key needed for later on.</p>
+<p><img alt="There can be many containers, which contain blobs. Each blob has a deterministic URL. Note, the Key icon which contains your secret key needed for later on." class="size-large wp-image-4113" src="https://notconfusing.github.io/images/uploads/2016/11/azure3.png" style="width:474px !important"> There can be many containers, which contain blobs. Each blob has a deterministic URL. Note, the Key icon which contains your secret key needed for later on.</p>
 <p>Now we'll move on to getting our node.js enviorment set up. With the magic of <code>npm</code> this is remarkably easy. In your project folder do</p>
 <p>``` {.EnlighterJSRAW enlighter-language="shell"}
 npm install azure-storage --save</p>
@@ -214,7 +214,7 @@ var makeThumb = function(imgPath, itemId, machineId, userName, options, res, cal
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
                         <div class="footer-title">Sitemap</div>
                         <ul class="list-unstyled">
-                            <li><a href="https://notconfusing.com/blog_index.html">Latest posts</a></li>
+                            <li><a href="https://notconfusing.github.io/blog_index.html">Latest posts</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">

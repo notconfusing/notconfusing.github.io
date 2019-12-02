@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="At Wikimania 2013 Hong Kong during a Wikidata presentation, there was a small nod to a hidden but useful feature of Wikidata - multi-language display. Wikidata items are language-agnostic in...">
         <meta name="keywords" content="">
-        <link rel="icon" href="https://notconfusing.com/favicon.ico">
+        <link rel="icon" href="https://notconfusing.github.io/favicon.ico">
 
         <title>Wikidata Babel Multi-Language Display Easter Egg - notconfusing.com</title>
 
         <!-- Stylesheets -->
-        <link href="https://notconfusing.com/theme/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://notconfusing.com/theme/css/fonts.css" rel="stylesheet">
-        <link href="https://notconfusing.com/theme/css/nest.css" rel="stylesheet">
-        <link href="https://notconfusing.com/theme/css/pygment.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/fonts.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/nest.css" rel="stylesheet">
+        <link href="https://notconfusing.github.io/theme/css/pygment.css" rel="stylesheet">
         <!-- /Stylesheets -->
 
         <!-- RSS Feeds -->
@@ -39,14 +39,14 @@
             <div class="container">
                 <div class="header-nav">
                     <div class="header-logo">
-                        <a class="pull-left" href="https://notconfusing.com/"><img class="mr20" src="https://notconfusing.com/extra/logo.svg" alt="logo">notconfusing.com</a>
+                        <a class="pull-left" href="https://notconfusing.github.io/"><img class="mr20" src="https://notconfusing.github.io/extra/logo.svg" alt="logo">notconfusing.com</a>
                     </div>
                     <div class="nav pull-right">
-                                <a href="https://notconfusing.com/">About</a>
-                                <a href="https://notconfusing.com/category/essays">Essays</a>
-                                <a href="https://notconfusing.com/pages/research.html">Research</a>
-                                <a href="https://notconfusing.com/category/blog">Other thoughts</a>
-                                <a href="https://notconfusing.com/category/hacking">Hacking</a>
+                                <a href="https://notconfusing.github.io/">About</a>
+                                <a href="https://notconfusing.github.io/category/essays">Essays</a>
+                                <a href="https://notconfusing.github.io/pages/research.html">Research</a>
+                                <a href="https://notconfusing.github.io/category/blog">Other thoughts</a>
+                                <a href="https://notconfusing.github.io/category/hacking">Hacking</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
               <div class="col-lg-12">
                   <div class="header-content">
                       <h1 class="header-title">Wikidata Babel Multi-Language Display Easter Egg</h1>
-                      <p class="header-date">By <a href="https://notconfusing.com/author/max.html">max</a>, Wed 14 August 2013, in category <a href="https://notconfusing.com/category/hacking.html">Hacking</a></p>
+                      <p class="header-date">By <a href="https://notconfusing.github.io/author/max.html">max</a>, Wed 14 August 2013, in category <a href="https://notconfusing.github.io/category/hacking.html">Hacking</a></p>
                       <div class="header-underline"></div>
                       <div class="clearfix"></div>
                       <p class="pull-right header-tags">
@@ -80,9 +80,9 @@
     <div class="container content">
         <p>At Wikimania 2013 Hong Kong during a Wikidata presentation, there was a small nod to a hidden but useful feature of Wikidata - multi-language display. Wikidata items are language-agnostic in concept, they are identified by their Q-ID which is displayed in the URL. Depending on which language your interface is set to independent <em>labels,</em> <em>descriptions, and aliases</em> will be displayed in that language. With this feature you can enable the <em>labels,</em> <em>descriptions, and aliases</em> of many languages to appear at once.</p>
 <p>This is a boon, because it allows you to better peer into the structural translation the names of over 14,000,000 Wikidata concepts into 270 languages. Needless to say such a corpus will be really useful for a variety of multilingual research. In fact I have already populated over 14,000 Wikidata labels and aliases, by bot, using data from the Library of Congress, as I explain later on. 14,000 labels and aliases are really a drop in the bucket, which is my this small-work-unit task is so necessary to activate.</p>
-<p><a href="https://notconfusing.com/images/uploads/2013/08/screen1.png"><img alt="Default view of Wikidata with Language set to English." class="size-large wp-image-289" src="https://notconfusing.com/images/uploads/2013/08/screen1.png" style="width:1024px !important"></a> Default view of Wikidata with Language set to English.</p>
+<p><a href="https://notconfusing.github.io/images/uploads/2013/08/screen1.png"><img alt="Default view of Wikidata with Language set to English." class="size-large wp-image-289" src="https://notconfusing.github.io/images/uploads/2013/08/screen1.png" style="width:1024px !important"></a> Default view of Wikidata with Language set to English.</p>
 <p>Douglas Adams is a favourite target for demonstrations on Wikidata because his Q-ID is easy to remember if you're geeky enough. If you click on the language selector in the top row, you could change your language to see Wikidata, and item labels, descriptions and aliases displayed in another language.</p>
-<p><a href="https://notconfusing.com/images/uploads/2013/08/screen4.png"><img alt="The language selector active." class="size-large wp-image-294" src="https://notconfusing.com/images/uploads/2013/08/screen4.png" style="width:1024px !important"></a> The language selector active.</p>
+<p><a href="https://notconfusing.github.io/images/uploads/2013/08/screen4.png"><img alt="The language selector active." class="size-large wp-image-294" src="https://notconfusing.github.io/images/uploads/2013/08/screen4.png" style="width:1024px !important"></a> The language selector active.</p>
 <p>Now, in order to enable the multiple languages at the same time, we make a customization to our user page. Go to your user page which is also in the top row of links and edit the page. In addition to any text there we add at line of code which will have the form:</p>
 <div class="highlight"><pre><span></span><span class="cp">{{</span><span class="err">#</span><span class="nv">babel</span><span class="o">:(</span><span class="nv">language</span> <span class="nv">code</span><span class="o">)-(</span><span class="nv">level</span><span class="o">)</span><span class="err">|</span><span class="o">(</span><span class="nv">language</span> <span class="nv">code</span><span class="o">)-(</span><span class="nv">level</span><span class="o">)</span><span class="err">|...</span><span class="cp">}}</span><span class="x"></span>
 </pre></div>
@@ -94,13 +94,13 @@
 </pre></div>
 
 
-<p><img alt="Adding the call to babel in your user page." class="size-large wp-image-290" src="https://notconfusing.com/images/uploads/2013/08/screen2.png" style="width:1024px !important"> Adding the call to babel in your user page.</p>
+<p><img alt="Adding the call to babel in your user page." class="size-large wp-image-290" src="https://notconfusing.github.io/images/uploads/2013/08/screen2.png" style="width:1024px !important"> Adding the call to babel in your user page.</p>
 <p>After we save our user page, we can go back to the Douglas Adams item. And see that there is a new page section displayed <em>In other languages</em>. For each language in your babel box, you will have the chance to edit the label and description.</p>
-<p><a href="https://notconfusing.com/images/uploads/2013/08/screen3.png"><img alt="The new view with Babel active. Able to edit in Spanish, Hebrew, and Lojban as well." class="size-large wp-image-291" src="https://notconfusing.com/images/uploads/2013/08/screen3.png" style="width:1024px !important"></a> The new view with Babel active. Able to edit in Spanish, Hebrew, and Lojban as well.</p>
+<p><a href="https://notconfusing.github.io/images/uploads/2013/08/screen3.png"><img alt="The new view with Babel active. Able to edit in Spanish, Hebrew, and Lojban as well." class="size-large wp-image-291" src="https://notconfusing.github.io/images/uploads/2013/08/screen3.png" style="width:1024px !important"></a> The new view with Babel active. Able to edit in Spanish, Hebrew, and Lojban as well.</p>
 <p>If you speak multiple languages this is useful because even if you cannot read the description - or one does not exist - in a particular language you may be able to read it in another language that you also know. Plus, if you feel so inclined you can quickly add to the label completeness goal with minimal clicks.</p>
 <p>You can probably tell by now that I'm obsessed with label completeness. It's important for understanding what we don't understand. Even though there are 4 million articles in English Wikipedia, there are 10 million more Wikidata items. With label completeness we can understand which articles exist in other languages but not in our own. Knowing what you don't know is the first hint to really expanding your knowledge into non-obvious areas.</p>
 <p>I tried to automate solving part of this problem. As I connect over 400,000 Wikidata items with their <a href="http://viaf.org/">VIAF</a> IDs, and VIAF has information about alternate names in different languages, there was some promise. For each <a href="https://www.wikidata.org/wiki/Special:WhatLinksHere/Property:P214">item with an associated VIAF ID</a> I found the potential alternative name. Then I used python to determine the probable language of string of text. If the alternate name was in a language that didn't already have a Wikidata label or alias, I checked Levenshtein distance of the label and alias versus the alternate name. If it was less that 65% similar - a threshold I determined by training a Bayesian filter - then I would write that label or alias. Here are the results: new AKA means that an alias was added, new label the same, had AKA means that the alias was available but greater than 65% similar, and likewise a label could be too similar.</p>
-<p><a href="https://notconfusing.com/images/uploads/2013/08/alias_results.png"><img alt="The results of VIAFbot, task 4, adding aliases from Library of Congress" class="size-full wp-image-292" src="https://notconfusing.com/images/uploads/2013/08/alias_results.png" style="width:780px !important"></a></p>
+<p><a href="https://notconfusing.github.io/images/uploads/2013/08/alias_results.png"><img alt="The results of VIAFbot, task 4, adding aliases from Library of Congress" class="size-full wp-image-292" src="https://notconfusing.github.io/images/uploads/2013/08/alias_results.png" style="width:780px !important"></a></p>
 <dl class="wp-caption alignnone" id="attachment_292" style="width: 790px;">
 
 <dd class="wp-caption-dd">
@@ -127,7 +127,7 @@ The results of VIAFbot, task 4, adding aliases from Library of Congress
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
                         <div class="footer-title">Sitemap</div>
                         <ul class="list-unstyled">
-                            <li><a href="https://notconfusing.com/blog_index.html">Latest posts</a></li>
+                            <li><a href="https://notconfusing.github.io/blog_index.html">Latest posts</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a Guest-Blog I wrote for Wikimedia Deutschland: copied here: German summary: Maximilian Klein benutzt Wikidata als als Datenfundus für statistische Auswertungen über das Wissen der Welt....">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://notconfusing.com/favicon.ico">
+
+        <title>Asking Ever Bigger Questions With Wikidata - notconfusing.com</title>
+
+        <!-- Stylesheets -->
+        <link href="https://notconfusing.com/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/fonts.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/nest.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container gradient">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="https://notconfusing.com/"><img class="mr20" src="https://notconfusing.com/extra/logo.svg" alt="logo">notconfusing.com</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="https://notconfusing.com/">About</a>
+                                <a href="https://notconfusing.com/category/essays">Essays</a>
+                                <a href="https://notconfusing.com/pages/research.html">Research</a>
+                                <a href="https://notconfusing.com/category/blog">Other thoughts</a>
+                                <a href="https://notconfusing.com/category/hacking">Hacking</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Asking Ever Bigger Questions With Wikidata</h1>
+                      <p class="header-date">By <a href="https://notconfusing.com/author/max.html">max</a>, Mon 23 February 2015, in category <a href="https://notconfusing.com/category/research.html">Research</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <p>This is a <a href="http://blog.wikimedia.de/2015/02/16/asking-ever-bigger-questions-with-wikidata/">Guest-Blog I wrote for Wikimedia Deutschland</a>: copied here:</p>
+<p><em><strong>German summary:</strong> <a href="http://en.wikipedia.org/wiki/User:Maximilianklein">Maximilian Klein</a> benutzt Wikidata als als Datenfundus für statistische Auswertungen über das Wissen der Welt. In seinem Artikel beschreibt er, wie er in Wikidata nach Antworten auf die großen Fragen sucht.</em></p>
+<h2>Asking Ever Bigger Questions with Wikidata</h2>
+<p><em>Guest post by <a href="http://en.wikipedia.org/wiki/User:Maximilianklein">Maximilian Klein</a></em></p>
+<h3>[A New Era]{#A_New_Era .mw-headline}</h3>
+<p><a href="https://www.wikidata.org/wiki/Q1645643" title="Q1645643">Simultaneous discovery</a> can sometimes be considered an indication for a <a href="https://www.wikidata.org/wiki/Q689971" title="Q689971">paradigm shift</a> in knowledge, and last month <a href="https://www.wikidata.org/wiki/Q13520818" title="Q13520818">Magnus Manske</a> and I seemed to have both had a very similar idea at the same time. Our ideas were to look at gender statistics in Wikidata and to slice them up by date of birth, citizenship, and langauge. (<a class="external text" href="http://magnusmanske.de/wordpress/?p=250">Magnus’ blog post</a>, and <a class="external text" href="http://notconfusing.com/preliminary-results-from-wigi-the-wikipedia-gender-inequality-index/">my own</a>.) At first it seems like quite elementary and naïve analysis, especially 14 years into Wikipedia, but only within the last year has this type of research become feasible. Like a baby taking its first steps, Wikidata and its tools ecosystem are maturing. That challenges us to creatively use the data in front of us.</p>
+<p>::: {.floatright}
+<a class="image" href="https://commons.wikimedia.org/wiki/File:Stages_of_Wikidata.png?uselang=de" title="Markus Krötzsch's 5 stages of Wikdiata"><img alt="" class="alignright" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Stages_of_Wikidata.png/400px-Stages_of_Wikidata.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Stages_of_Wikidata.png/600px-Stages_of_Wikidata.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Stages_of_Wikidata.png/800px-Stages_of_Wikidata.png 2x" style="width:400px !important"></a>
+:::</p>
+<p>Describing 5 stages of Wikidata, Markus Krötsch foresaw this analyis in his <a class="external text" href="http://korrekt.org/talks/2014/wikimania-wikidata.svg">presentation</a> <a class="external text" href="http://new.livestream.com/wikimania/friday2014/videos/59350537">at Wikimania 2014</a>. The stages which range from<em>Know</em> to <em>Understand</em> are: <em>Read</em>, <em>Browse</em>, <em>Query</em>, <em>Display</em>, and <em>Analyse</em> (see image). Most likey you may have read Wikidata, and perhaps even have <a class="external text" href="http://tools.wmflabs.org/reasonator/">browsed with Reasonator</a>, <a class="external text" href="http://tools.wmflabs.org/autolist/autolist1.html?">queried with autolist</a>, or <a class="external text" href="http://www.histropedia.com/">displayed with histropedia</a>. I care to focus on <em>analyse</em> – the most understand-y of the stages. In fact the example given for <em>analyse</em> was <a class="external text" href="http://notconfusing.com/sex-ratios-in-wikidata-part-iii/">my first exploration of gender and language</a>, where I analysed the ratio of female biographies by Wikipedia Language: English and German are around 15% and Japanese, Chinese and Korean are each closer to 25%.</p>
+<p>[]{#more-21349}To do biography analysis before Wikidata was much harder. To know the gender of an article you’d resort to <a href="https://www.wikidata.org/wiki/Q30642" title="Q30642">natural language processing</a> or hacks like counting gendered categories and guessing based on first name. Even more, the effort had to be duplicated for each language that had to be translated. Now the promise of language-free semantic data, and tools like <a class="external text" href="https://wdq.wmflabs.org/api_documentation.html">Wikidata Query</a> and <a class="extiw" href="https://www.mediawiki.org/wiki/Wikidata_Toolkit" title="mw:Wikidata Toolkit">Wikidata Toolkit</a> are here. The process is easier because it is more database-like; <em>select</em>, <em>group by</em>,<em>apply</em>, and <em>combine</em>.</p>
+<p>With this new simplicity, let’s review what we have imagined so far. Here’s a non-exhaustive introduction to the state of creative question-asking so far:</p>
+<ul>
+<li>What’s <a class="external text" href="http://notconfusing.com/a-word-for-every-lanaguage-in-every-language/">the word FOR every langauge IN every language?</a></li>
+<li>Which professions have the widest gender distibutions? (Asked on wiki-research mailing list: not yet anwered.)</li>
+<li>What’s the connection between hospitals per population and the incidence of tuberculosis cases in cities in England from 2000-2010 (<a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_Wikidata_for_research" title="Wikidata:WikiProject Wikidata for research">Example from “Wikidata for Research” proposal.</a>)</li>
+</ul>
+<h3>[Pushing Ourselves to Think Even Bigger]{#Pushing_Ourselves_to_Think_Even_Bigger .mw-headline}</h3>
+<p>Can we think even bigger if we use more of the available data? Thinking about the fact that every <a href="https://www.wikidata.org/wiki/Wikidata:Glossary#Claims_and_statements" title="Wikidata:Glossary"><em>claim</em></a> may have an attached <a href="https://www.wikidata.org/wiki/Wikidata:Glossary#Reference" title="Wikidata:Glossary"><em>reference</em></a>, Markus Krötzsch always wants to know, for a given set of claims what references must be believed in order to believe the set of claims? With that notion we could look at all the claims associated with all the items of a given language, and thus the required belief system of that langauge. At this point we could ask what are the differences in the belief systems of any two langauges?</p>
+<p>::: {.floatleft}
+<a class="image" href="https://commons.wikimedia.org/wiki/File:Wikidata-wikiproject-ontology.png?uselang=de" title="What are the fundamental principles of all of Wikidata?"><img alt="" class="alignleft" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wikidata-wikiproject-ontology.png/200px-Wikidata-wikiproject-ontology.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wikidata-wikiproject-ontology.png/300px-Wikidata-wikiproject-ontology.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wikidata-wikiproject-ontology.png/400px-Wikidata-wikiproject-ontology.png 2x" style="width:200px !important"></a>
+:::</p>
+<p>Another way we could test the fundamental principles of knowledge and culture is to consider the chains made by the <a href="https://www.wikidata.org/wiki/Property:P279" title="Property:P279">subclass of</a>, <a href="https://www.wikidata.org/wiki/Property:P31" title="Property:P31">instance of</a>, or <a href="https://www.wikidata.org/wiki/Help:Modeling_causes" title="Help:Modeling causes">cause of</a> properties. Every language is present at different links of each chain. So we can look at the differences in ways in which languages organize a hierarchy of concepts – or if they think it’s a hierarchy at all.</p>
+<p>Much fun for logicians and epistemologists. But we can also ask more socially important questions, questions about how language and society relate. What biases do we have that we aren’t even aware of? The method, for which I’ve <a class="external text" href="http://notconfusing.com/should-i-do-my-phd-in-the-open/#research">proposed a PhD</a>, could be conducted as follows. We’re aware of sexism in our societies, and as you’ve seen we’ve started to build a statistical profile of how it manifests in Wikidata. Likewise we’re cognizant of racism and homophobia. We might next look at rates people appear in Wikidata by race and desire. Let’s assume we could train a model to say that these kinds of distributions are types of social biases. Next we could search every property in Wikidata to see if it indicated social bias. If successful we may find overlooked stigmas and phobias in society.</p>
+<p>I claim that our theoretical question-answering ability has paradigmatically shifted with the growing up of Wikidata. Soon enough you won’t even need to be a sophisticated programmer to whisper your questions into the system. So next time your reading, browsing, querying or displaying Wikidata, challenge yourself to think about how to analyse it too.</p>
+
+
+        
+    </div>
+        <!-- /Content -->
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Sitemap</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://notconfusing.com/blog_index.html">Latest posts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/notconfusing" target="_blank">Twitter: @notconfusing</a></li>
+                            <li><a href="https://www.linkedin.com/in/notconfusing/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/notconfusing/" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small>CC-BY-SA Max Klein</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

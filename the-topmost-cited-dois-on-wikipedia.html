@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="You&#39;re surfing a topic of great interest to you on Wikipedia, so interesting that you actually click through to the references. You&#39;re excited to read the original material, but all of a sudden...">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://notconfusing.com/favicon.ico">
+
+        <title>The Topmost Cited DOIs on Wikipedia - notconfusing.com</title>
+
+        <!-- Stylesheets -->
+        <link href="https://notconfusing.com/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/fonts.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/nest.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container gradient">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="https://notconfusing.com/"><img class="mr20" src="https://notconfusing.com/extra/logo.svg" alt="logo">notconfusing.com</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="https://notconfusing.com/">About</a>
+                                <a href="https://notconfusing.com/category/essays">Essays</a>
+                                <a href="https://notconfusing.com/pages/research.html">Research</a>
+                                <a href="https://notconfusing.com/category/blog">Other thoughts</a>
+                                <a href="https://notconfusing.com/category/hacking">Hacking</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">The Topmost Cited DOIs on Wikipedia</h1>
+                      <p class="header-date">By <a href="https://notconfusing.com/author/max.html">max</a>, Thu 10 April 2014, in category <a href="https://notconfusing.com/category/research.html">Research</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <p>You're surfing a topic of great interest to you on Wikipedia, so interesting that you actually click through to the references. You're excited to read the original material, but all of a sudden you are foiled—<em>you've hit a paywall!</em> And <strong>\$35</strong> to read an article is just too steep.</p>
+<p><img alt="Fish" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Xanthichthys_ringens_-_pone.0010676.g191.png/600px-Xanthichthys_ringens_-_pone.0010676.g191.png" style="width:360px !important"> This image of <a href="https://en.wikipedia.org/wiki/Xanthichthys_ringens">Xanthichthys ringens</a> is sourced from an open-access scholarly article licensed for re-use. How can we make that reusability explicit when citing this source in Wikipedia articles? For further details, see this <a href="https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost/2014-01-15/Op-ed">Signpost op-ed</a> by Daniel Mietchen.</p>
+<p><a href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Open_Access/Signalling_OA-ness">The Wikipedia Open Access Signalling Project</a>, which I've recently joined, sees this as a fantastic opportunity to spread the word about the <a href="https://en.wikipedia.org/wiki/en:Open_Access" title="w:en:Open Access">Open Access (OA) movement</a>. We are still in the initial stages of understanding what OA materials are currently cited on-wiki. One of the ways OA has been cited on Wikipedia so far is through the <a href="https://en.wikipedia.org/wiki/Template:Cite_doi">Template:Cite DOI</a>. A Digital Object Identifier (DOI) can be thought of as ISBNs for articles - academic or otherwise - in the networked world.</p>
+<p>The DOI becomes useful in citations because, like with any identifier, one can unmistakably and machine-readably know what is being cited. For the OA Signalling Project machine-readability is key. It will allow us to tell readers whether a cited resource is OA or free-to-read before they even click on it. By analysing the usage of DOIs on Wikipedia we can see what areas are starting to catch on to this slick method of citation.</p>
+<p>Our method comes from processing the English Wikipedia database dumps from March 2014.  Hattip going to the wonderful <a href="https://pypi.python.org/pypi/mediawiki-utilities/0.2.1">python tools</a> written by Wikimedia Foundation Analytics member <a href="https://twitter.com/halfak">Aaron Halfaker.</a> Note this analysis is strictly looking for the <em>Cite doi</em> template, so it doesn't take into account DOIs that are mentioned in the <em>Cite journal</em> template.</p>
+<p>Let's start off with a surface inquiry - what are the top most used DOIs by number of Wikipedia pages that cite them? Below are the top 10.</p>
+<p>DOI                                  Article Title                                                                                                Times Cited</p>
+<hr>
+<p>10.1128/MCB.22.19.6663-6668.2002      Purified Box C/D snoRNPs Are Able To Reproduce Site-Specific 2′-O-Methylation of Target RNA In Vitro         171
+  10.1093/icb/icr006                    Evolution and Ecology of Directed Aerial Descent in Arboreal Ants                                            132
+  10.1093/nar/gkj002                    A novel experimental approach for systematic identification of box H/ACA snoRNAs from eukaryotes             75
+  10.1128/MCB.24.13.5797-5807.2004      Human Box H/ACA Pseudouridylation Guide RNA Machinery                                                        66
+  10.1088.2F0004-6256.2F141.2F5.2F170   Rotational properties of Jupiter Trojans I. Light curves of 80 objects.                                      64
+  10.1093/emboj/20.11.2943              Cajal body‐specific small nuclear RNAs: a novel class of 2′‐O‐methylation and pseudouridylation guide RNAs   50
+  10.1088/0004-637X/753/2/156           Parallaxes and proper motions of ultracool brown dwarfs of spectral types Y and late T.                      38
+  10.1088/0067-0049/197/2/19            The first hundred brown dwarfs discovered by the wide-field infrared survey explorer.`                      33
+  10.3897/zookeys.242.3856              A new species of Schrankia Hübner, 1825 from China (Lepidoptera, Erebidae, Hypenodinae)                      28
+  10.1073/pnas.242603899                Generation and initial analysis of more than 15,000 full-length human and mouse cDNA sequences               27</p>
+<p>From an individual article point of view, we can see that Biology performs very well with many articles about molecular and cell biology being widely cited. Also in 2nd and 9th place a study of ants and moths get their due. Astronomy also seems to find success with 3 positions in the top 10.  However if one looks at the articles in which these citations occur, they appear to be mostly stub pages about RNA variations, or outlying stars. We know that each citation is not equal however because those citations on pages that receive more views will gain more exposure. We adapt our method to sum of the page views of each page on which the DOI appears.  To do this we used <a href="https://tools.wmflabs.org/wikiviewstats/">Wiki View Stats</a> which is quickly becoming a valid alternative to the under-strain <a href="http://stats.grok.se">stats.grok.se</a> . This top 10 <em>by viewership</em> tells a very different story.</p>
+<p>DOI                           Article Title                                                                                                      Views in March '14</p>
+<hr>
+<p>10.1038/460787a                Climate data spat intensifies                                                                                      2,767,151
+  10.1038/462545a                Climatologist under pressure                                                                                       2,766,979
+  10.1353/cwh.1969.0065          <em>Twelve Years a Slave</em> (review)                                                                                    1,382,286
+  10.1145/1284621.1284635        Why you can't cite Wikipedia in my class                                                                           1,313,264
+  10.1371/journal.pone.0028705   ‘<em>Nedoceratops</em>’: An Example of a Transitional Morphology                                                          1,216,279
+  10.1126/science.1173983        Recent Warming Reverses Long-Term Arctic Cooling                                                                   704,326
+  10.1038/nature06949            High-resolution carbon dioxide concentration record 650,000-800,000 years before present                           646,251
+  10.1073/pnas.0805721105        Proxy-based reconstructions of hemispheric and global surface temperature variations over the past two millennia   646,251
+  10.1080/10807030802387556       A Comparative Analysis of Accident Risks in Fossil, Hydro, and Nuclear Energy Chains                              624,108
+  10.1098/rsbm.1955.0005          Albert Einstein. 1879-1955                                                                                        544,353</p>
+<p>Firstly some of these citations are receiving a large audience, the topmost gets 2.75 million views in March 2014. True, the article is not being read directly, but some of its content is being transmitted with each read of the page. Also the over all feeling of these citations is different. Somehow they are less rigorously academic, and on more controversial topics. Clearly climate change features heavily, which is both a testament to the public wanting to read about climate change topics, and also the desire of Wikipedians to cite those pages thoroughly. This new perspective is essentially a new <a href="https://en.wikipedia.org/wiki/Altmetrics">altmetric</a>.</p>
+<p>While we are investigating individual DOIs, we can use the fact that a DOI has a prefix-suffix composition. The prefix indicates the "registrant" (usually a publisher),  and the suffix what item it is of that publisher. What are the most used DOI prefixes? Below are the top 10.</p>
+<p>Prefix   Name                                                         DOIs in Use</p>
+<hr>
+<p>10.1016   Elsevier                                                     3398
+  10.1038   Nature Publishing Group                                      1879
+  10.1007   Springer-Verlag                                              1793
+  10.1098   The Royal Society                                            1716
+  10.1111   Wiley Blackwell (Blackwell Publishing)                       1350
+  10.1093   Oxford University Press                                      1203
+  10.1002   Wiley Blackwell (John Wiley &amp; Sons)                          960
+  10.1021   American Chemical Society                                    873
+  10.1126   American Association for the Advancement of Science (AAAS)   821
+  10.1080   Informa UK (Taylor &amp; Francis)                                704</p>
+<p>With Elsevier dominating the top spot, it shows there is still a lot of growth for OA citations on Wikipedia. Also there are other registrants here which are do not support OA policies. If you know more about the OA-ness of each of these top 10, we would like to hear.  Anecdotally, If we take information about Journal citations that do not use DOIs but rather use <a href="http://en.wikipedia.org/wiki/Template:Cite_journal">Template:Cite Journal</a> then we find that this isn't an unusual distribution, <a href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Academic_Journals/Journals_cited_by_Wikipedia/Popular1">as the top cited Journals from fuzzy of Template:Cite Journal</a> have a lot of overlap.</p>
+<p>Some of this analysis could already be performed by "Cite-o-meter", an existing service answering queries at <a href="http://toolserver.org/~dartar/cite-o-meter/">http://toolserver.org/~dartar/cite-o-meter/</a> developed in 2011. However cite-o-meter has not seen development in a few years, yet it acutally allows us to think bigger about theses statistics. It would be a worthwhile undertaking to merge or add to cite-o-meter the altmetric of <em>citation strength by Wikipedia pageviews.</em> In fact such a service could include publisher strength by Wikipedia pageviews, as well as Researcher strength by using DOI associated <a href="http://orcid.org/">OrcIDs</a>.</p>
+<p>Lastly we can flip our previous question, trying to determine which pages use the most DOIs?</p>
+<p>Page Name                             Times Cited</p>
+<hr>
+<p>Induced stem cells                    189
+  List of Ig Nobel Prize winners        91
+  Asymmetric hydrogenation              86
+  Spinal muscular atrophy               84
+  Crystallographic defects in diamond   80
+  Fluorine                              78
+  Fullerene chemistry                   54
+  Choosing Wisely                       50
+  Woolly mammoth                        47
+  Health effects of tobacco             43</p>
+<p>The list is as you might expect is power-law distributed. In fact 60.6% of pages that have any DOI citation, have only one. But among these top citing pages we see a large amount of science articles, some of which are quite obscure and recondite. However one article that is promising to the OA signalling cause is "Health effects of tobacco", because it appears on the <a href="https://en.wikipedia.org/wiki/Wikipedia:MED#Goals">WikiProject:Medicine top-importance list</a>. And one of the ways that the OA signalling project plans to prove its worth is by focusing foremost on those medical articles that the web reads for truly important information.</p>
+<p>Our next tasks is to start writing a bot that will be able to automatically determine the OA-ness of a citation using some new APIs that have been released by publishers. At that point we will be able to know what percentage of citations on Wikipedia can actually be read by general public.</p>
+<p>To learn more about the OA signalling project you can follow our progress on <a href="https://github.com/Daniel-Mietchen/OA-signalling">Github</a>. For code to this anlysis, check out the <a href="https://github.com/Daniel-Mietchen/OA-signalling/tree/master/cite_doi_analysis">ipython notebooks</a>.</p>
+
+
+        
+    </div>
+        <!-- /Content -->
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Sitemap</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://notconfusing.com/blog_index.html">Latest posts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/notconfusing" target="_blank">Twitter: @notconfusing</a></li>
+                            <li><a href="https://www.linkedin.com/in/notconfusing/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/notconfusing/" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small>CC-BY-SA Max Klein</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

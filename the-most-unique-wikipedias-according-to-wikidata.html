@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="If you read Wikipedia in a more than one language you&#39;ll have noticed the sidebar sometimes ready to link you to the topic of the current article in one or more other languages. If you&#39;ve been...">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://notconfusing.com/favicon.ico">
+
+        <title>The Most Unique Wikipedias According To Wikidata - notconfusing.com</title>
+
+        <!-- Stylesheets -->
+        <link href="https://notconfusing.com/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/fonts.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/nest.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container gradient">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="https://notconfusing.com/"><img class="mr20" src="https://notconfusing.com/extra/logo.svg" alt="logo">notconfusing.com</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="https://notconfusing.com/">About</a>
+                                <a href="https://notconfusing.com/category/essays">Essays</a>
+                                <a href="https://notconfusing.com/pages/research.html">Research</a>
+                                <a href="https://notconfusing.com/category/blog">Other thoughts</a>
+                                <a href="https://notconfusing.com/category/hacking">Hacking</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">The Most Unique Wikipedias According To Wikidata</h1>
+                      <p class="header-date">By <a href="https://notconfusing.com/author/max.html">max</a>, Wed 12 June 2013, in category <a href="https://notconfusing.com/category/hacking.html">Hacking</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <p>If you read Wikipedia in a more than one language you'll have noticed the sidebar sometimes ready to link you to the topic of the current article in one or more other languages. If you've been following the trends you'll know that Wikidata is now in charge of keeping these language links in order. (To understand more about how Wikidata works watch my <a href="http://www.youtube.com/watch?v=cMMzfG9LITc&amp;feature=youtu.be">youtube tutorial</a> starting at 5:15) One upshot of that is that we can easily count these links and understand more about the Wikipedia projects - like how "unique" different Wikipedias are. I <strong>define</strong> a <strong>unique Wikidata Item</strong> <strong> of a </strong>language X** to be a Wikidata Item that has only one language link, and the language link is in language X. I also find the total number of items that have occurrences of language X in their language links. Below I graph then total items against unique items for every Wikipedia language, first on a linear scale and then on logarithmic scale.</p>
+<p><a href="https://notconfusing.com/images/uploads/2013/06/LangLinks_linear.png"><img alt="" class="wp-image-258" src="https://notconfusing.com/images/uploads/2013/06/LangLinks_linear.png" style="width:512px !important" title="LangLinks_linear"></a> Wikidata languages comparing unique versus total items. Linear scale. [Click to expand] </p>
+<p><a href="https://notconfusing.com/images/uploads/2013/06/LangLinks_log.png"><img alt="" class="wp-image-259" src="https://notconfusing.com/images/uploads/2013/06/LangLinks_log.png" style="width:512px !important" title="LangLinks_log"></a> Wikidata languages comparing unique versus total items. Logarithmic scale. [Click to expand]We can see how far and away English is in both absolute uniques and total items, that's unsurprising. What's curious though is that you can see from the linear plot, the a curve fitting the data appears to be roughly parabolic or exponential. That would indicate that the more total items a language has, the greater the chance it that those items are unique. This might seem obvious, but it doesn't neccesarily have to be. It could be that the English Items were half covered by German, and the other half French for instance (but it isn't).<br>
+If you look at the Logarithmic plot, you'll still see the same line of best fit in blue, which represents the expected level of unique items for a Wikipedia at a given total size. If a Wikipedia lies above the line, it's more unique than expected, and if it lies below the line its less unique than expected. For instance at the high end of the total axis German and Chinese show higher than expected uniqueness, and Dutch and Polish are slightly under. It's fun if you have the time to draw an imaginary vertical line in the middle of the plot and see at a fixed total size the varying uniquenesses of different Wikipedias.<br>
+By now you might be asking to look at these Wikipedias as ratio of [Unique Items] / [Total Items]. Below it a plot doing just that. They are ordered and coloured on how large their total size is a percentage of English's total size. Then they're split into two categories, wikis with more than 100,000 items and those with less.</p>
+<p><a href="https://notconfusing.com/images/uploads/2013/06/Uniquenesses.png"><img alt="" class="wp-image-261" src="https://notconfusing.com/images/uploads/2013/06/Uniquenesses.png" style="width:512px !important" title="Uniquenesses"></a> Uniqueness percentage of Wikipedias ordered by total size. [Click to expand]A good way to read this chart is to look at the tallest bars compared how far left they are. If two bars are of equal heights the one on the left is coming from a smaller total Wikipedia, and is therefore more impressive at having that uniqueness ratio. Of the 100,000 or more category, English sets the standard at 49% unique. However Arabic Wikipedia is a high performer in its class because its 35.77% uniqueness comes in the middle of the pack.</p>
+<p>UPDATE: By request I replotted the above uniqunesses. but with the X axis ordered by <a href="http://stats.wikimedia.org/EN/Sitemap.htm">usage defined by hourly page views</a>. It seems like there is a higher correlation this way too. (Credit for this intuition goes to Italian Wikipedian "User:Nemo_bis")</p>
+<p><a href="https://notconfusing.com/images/uploads/2013/06/Uniqunesses-by-Usage.png"><img alt="" class="wp-image-269" src="https://notconfusing.com/images/uploads/2013/06/Uniqunesses-by-Usage.png" style="width:512px !important" title="Uniqunesses by Usage"></a> Uniqueness percentage of Wikipedias ordered by hourly page views. [Click to expand]Again Arabic does well, and German Wikipedia becomes more impressive as it less visited than it has total articles.</p>
+<p>Now let's go back to our definition of uniqueness - an item with just one language link. We can ask the question, how much of Wikidata only has 1 language link? And how much has 2, 3, 4, 5, 6 language links, .... all the way to 286, the maximum since there are 286 Wikipedia languages. In fact there is only one page in all the 286 items, the <a href="https://www.wikidata.org/wiki/Q5296">"Main Page"</a>.</p>
+<p>Here's the composition of Wikidata by the number of language links of each item. I've broken it up into 4 plots of increasing zoom, and coloured it to show its fractal nature.</p>
+<p><a href="https://notconfusing.com/images/uploads/2013/06/Composition_zoom-effect.png"><img alt="" class="wp-image-257" src="https://notconfusing.com/images/uploads/2013/06/Composition_zoom-effect.png" style="width:512px !important" title="Composition_zoom effect"></a> Composition of Wikidata by the number of language links of each item. [Click to enlarge]I define an <strong>n-cluster</strong> to be the set of items that have <strong>n language links</strong>. Two-thirds of Wikidata items are in the 1-cluster. 13.3% of Wikidata exists as a 2-cluster, 6.2% are a 3-cluster, and 3.4% are a 4-cluster. The lowest n-cluster to have no items is the 193-cluster, for comparison the 192-cluster has 10 items, and the 194-cluster has 4.</p>
+<p>All of this goes to show that if you picked a random article on a random Wikipedia, statistically it probably doesn't have an equivalent article in another language. However from empirical evidence, it seems otherwise, normally there is an interlanguage link. One hypothesis to explain this is that the articles we tend to read are usually more general interest. That suggests another more difficult question to answer, comparing n-clusters to page views. (Maybe a good topic for my next research.)</p>
+<p>For now lets turn our attention to another part of the composition graph. Since we've already looked at unique items, let's inspect the 2- and 3-clusters: "pairs" and "triples".</p>
+<p><img alt="" class="alignnone size-medium wp-image-256" src="https://notconfusing.com/images/uploads/2013/06/Composition_focus-effect.png" style="width:300px !important" title="Composition_focus effect"></p>
+<p>There are 1,578,043 items in the 2-cluster, and 735,573 in the 3-cluster. Each of those items are are cross of two or three languages. For now we'll focus on the the top 20 pairs and triples. Here they are, coloured to show whether English is in the cluster.</p>
+<p><a href="https://notconfusing.com/images/uploads/2013/06/Pairs-And-Triples.png"><img alt="" class="wp-image-260" src="https://notconfusing.com/images/uploads/2013/06/Pairs-And-Triples.png" style="width:512px !important" title="Pairs And Triples"></a> Comparison of 20 highest occurring pairs and triples in Wikidata. [Click to expand]A lot of these pairs intuitively make sense from a cultural standpoint: English-German, Russian-Ukranian, Japanese-Chinese. As do some of the triples: English-German-French, English-French-Italian, Russian-Kazak-Bashkir.</p>
+<p>Some are more perplexing, especially the high prominence of Vietnamese, Cebuano, and Waray permuted with Swedish and Dutch. Were there some prolific translators? Machine translation bots? Is Wikidata not reflecting Wikipedia fully? Perhaps you can explain those correlations? In fact here is the data accurate as of 1 June 2013, and <a href="https://github.com/notconfusing/langlink-analysis">code available on github.</a></p>
+<blockquote>
+<p>UPDATE: User Zolo on Wikidata wrote to me "I'll point out here that the Vietnamese-Dutch (and perhaps Cebuano-Waray-Swedish) cluster is most probably due to the high number of items about taxons. That also explains why they have relatively few "unique items"."</p>
+</blockquote>
+
+
+        
+    </div>
+        <!-- /Content -->
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Sitemap</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://notconfusing.com/blog_index.html">Latest posts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/notconfusing" target="_blank">Twitter: @notconfusing</a></li>
+                            <li><a href="https://www.linkedin.com/in/notconfusing/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/notconfusing/" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small>CC-BY-SA Max Klein</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

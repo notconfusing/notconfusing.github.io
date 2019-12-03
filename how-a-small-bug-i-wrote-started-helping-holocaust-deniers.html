@@ -33,7 +33,7 @@
     <body>
 
         <!-- Header -->
-    <div class="header-container gradient">
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://notconfusing.github.io/images/header1200x360.jpg'); background-position: center; ">
 
             <!-- Static navbar -->
             <div class="container">
@@ -83,21 +83,20 @@
 <p>Hi Max, I've pinged you a couple of times, but in case you're not getting them, would you mind commenting?</p>
 <p>It's about an edit your bot made to Wikidata that changed the infobox of a featured article about a book about the Holocaust, <a href="https://en.wikipedia.org/wiki/Night_%28book%29" title="Night (book)">Night</a>. The bot fetched data from the Italian Wikipedia, rather than from the English (the book is in English) or the French (it was first published in France).</p>
 <p>The issue is that the Italian Wikipedia calls it fiction (a novel), rather than memoir. This is an issue because Holocaust deniers call it fiction too, so we've avoided doing the same. It's not that only Holcaust deniers call it that (it is memoir, but parts appear to have been fictionalized, so "novel" is not a horrible genre for it), but there is sensitivity around it because of them, and the author doesn't like it to be called a novel.</p>
-<p>I'm trying to find out why your bot would have fetched the data from the Italian Wikipedia. Any light you can shed on it would be appreciated. Best wishes, <a href="https://en.wikipedia.org/wiki/User:SlimVirgin" title="User:SlimVirgin">SarahSV</a> [<a href="https://en.wikipedia.org/wiki/User_talk:SlimVirgin" title="User talk:SlimVirgin">(talk)</a>]{.small} 02:12, 29 April 2016 (UTC)</p>
+<p>I'm trying to find out why your bot would have fetched the data from the Italian Wikipedia. Any light you can shed on it would be appreciated. Best wishes, <a href="https://en.wikipedia.org/wiki/User:SlimVirgin" title="User:SlimVirgin">SarahSV</a> [<a href="https://en.wikipedia.org/wiki/User_talk:SlimVirgin" title="User talk:SlimVirgin">(talk)</a>] 02:12, 29 April 2016 (UTC)</p>
 </blockquote>
 <p>The truth is that this was an honest mistake because my intention, in line with the philosophical underpinnings of Wikidata is to avoid this sort of cross-cultural conflict. Wikidata has a pluralist ideology, that is it can support many competing facts without favouring any one. It allows you to say that the book Night is: a novel (according to these historians), and separately an autobiography (according to some other source). My intention was to use this pluralist structure, with the sources being Italian and English Wikipedias, but a bug in my code prevented that ideal.  (By the way I believe the Holocaust did happen, <a href="http://notconfusing.com/kleins-search-for-klajnbohms-an-ancestral-research-trip-to-zwolen-poland/">read about my ancestral trip to Poland to find out more</a>.)</p>
 <p>Basically, the technical issue was that I missed an 'else' case because of a poor programming design. In some cases just the first Wikipedia languages I was inspecting would be represented in Wikidata. I was utilizing English, German, French, Spanish, Italian, Japanese, Russian, Polish, Swedish Wikipedias, in no particular order, and in this case Italian went first, and only it's opinion about the genre of Night, was carried into Wikidata.</p>
 <p>I now feel and understand empirically why testing so is crucial. It's no longer and abstract, academic curiosity backed up thinly by seemingly unrelated horror stories. Thank you life for teaching me this lesson. And perhaps, as my colleagues have commented, the way algorithms - and all their shortcomings - shape history, is a rich venue for research.</p>
 <p>Interested programmers may read on for details of the bug. <a href="https://gist.github.com/notconfusing/0dfed7e9bea694ecb476c1cc7b4b2d88#file-viafbot-infobox-book-L418">Looking at my old code</a>, I find a comment describing the states I was looking for between the localClaims (scraped from various Wikipedias) and the remoteClaims (already existing in Wikidata). I wrote:</p>
-<div class="highlight"><pre><span></span><span class="err">&#39;&#39;&#39;there are three states:</span>
+<div class="highlight"><pre><span></span><span class="err">&quot;&quot;&quot;there are three states:</span>
 <span class="err">noMatchingClaim, so we add our claim</span>
 <span class="err">matchingClaimUnsourced, so we add our source</span>
-<span class="err">matchingClaimSourced, claim was already present and had the same source, do nothing&#39;&#39;&#39;</span>
+<span class="err">matchingClaimSourced, claim was already present and had the same source, do nothing&quot;&quot;&quot;</span>
 </pre></div>
 
 
-<p>Then I proceed to try and find these states by writing what is a basically a big decision tree. So big that it's a text-wrap nightmare, 8 blocks deep.<br>
-[]{.small}</p>
+<p>Then I proceed to try and find these states by writing what is a basically a big decision tree. So big that it's a text-wrap nightmare, 8 blocks deep.  </p>
 <div class="highlight"><pre><span></span><span class="n">noMatchingClaim</span> <span class="o">=</span> <span class="k">False</span>
 <span class="n">matchingClaimUnsourced</span> <span class="o">=</span> <span class="k">False</span>
 <span class="n">matchingClaimSourced</span> <span class="o">=</span> <span class="k">False</span>
@@ -122,7 +121,7 @@
 <p>Trying to be more, not confusing.</p>
 
 
-        
+
     </div>
         <!-- /Content -->
 

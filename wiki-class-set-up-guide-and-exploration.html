@@ -83,7 +83,7 @@
 <p>::: {.text_cell_render .border-box-sizing .rendered_html}
 Wiki-Class Set-up Guide and Exploration
 =======================================</p>
-<p><a href="http://pythonhosted.org/wikiclass/">Wiki-Class</a> is python package that can determine the <em>quality</em> of a Wikipedia page, using machine learning. It is the open-sourcing of the <a href="https://www.wikidata.org/wiki/Q245748#sitelinks-wikipedia">Random Forest</a> algorithm used by <a href="https://en.wikipedia.org/wiki/User:SuggestBot">SuggestBot</a>. SuggestBot is an opt-in recommender to Wikipedia editors, offering pages that need work which look like pages they've worked on before. Similarly, with this package, you get a function that accepts a string of <a href="https://en.wikipedia.org/wiki/Wikipedia:Wikitext">wikitext</a>, and returns a <a href="https://en.wikipedia.org/wiki/Wikipedia:Quality_scale#Grades">Wikipedia Class ('Stub', 'C-Class', 'Featured Article', etc.)</a>. Wiki-class is currently in <code>alpha</code> according to its packager and developer [[\@halfak]]{.citation}(https://twitter.com/halfak), and although I had to make a few patches to get some examples to work, it's ready to start classifying your wikitext.</p>
+<p><a href="http://pythonhosted.org/wikiclass/">Wiki-Class</a> is python package that can determine the <em>quality</em> of a Wikipedia page, using machine learning. It is the open-sourcing of the <a href="https://www.wikidata.org/wiki/Q245748#sitelinks-wikipedia">Random Forest</a> algorithm used by <a href="https://en.wikipedia.org/wiki/User:SuggestBot">SuggestBot</a>. SuggestBot is an opt-in recommender to Wikipedia editors, offering pages that need work which look like pages they've worked on before. Similarly, with this package, you get a function that accepts a string of <a href="https://en.wikipedia.org/wiki/Wikipedia:Wikitext">wikitext</a>, and returns a <a href="https://en.wikipedia.org/wiki/Wikipedia:Quality_scale#Grades">Wikipedia Class ('Stub', 'C-Class', 'Featured Article', etc.)</a>. Wiki-class is currently in <code>alpha</code> according to its packager and developer [[@halfak]]{.citation}(https://twitter.com/halfak), and although I had to make a few patches to get some examples to work, it's ready to start classifying your wikitext.</p>
 <h1>Overview</h1>
 <ol>
 <li>Setting it up on Ubuntu.</li>
@@ -1227,7 +1227,7 @@ In [35]:
 <p>::: {.text_cell_render .border-box-sizing .rendered_html}
 We can see that, having a large number of stubs to train on really gives us a high precision in classifying them.</p>
 <p>So there you have it - a brief playing around with Wiki-Class, an easy way to get rough quality estimates out of your data. If you extend any more examples of using this class, I'd be intrigued to see and collaborate on them.</p>
-<p>‽[[\@notconusing]]{.citation}(https://twitter.com/notconfusing)
+<p>‽[[@notconusing]]{.citation}(https://twitter.com/notconfusing)
 :::</p>
 <p>::: {.cell .border-box-sizing .code_cell .vbox}
 ::: {.input .hbox}

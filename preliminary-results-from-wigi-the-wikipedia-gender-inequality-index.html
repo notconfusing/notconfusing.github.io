@@ -91,27 +91,27 @@
 <h2>Summary Statistics</h2>
 <p>As of October 14 2014 we inspected a total of 2,561,999 or about <a href="http://www.wikidata.org/wiki/Special:WhatLinksHere/Q5"><strong>2.5 million "human"</strong></a> items, that is any Wikidata item with the property "instance of: <a href="http://www.wikidata.org/wiki/Q5">Q5 (human)"</a>.</p>
 <p>On each of those items we look for the following additional properties and found  them no the following number of items.</p>
-<div class="highlight"><pre><span></span><span class="err">                                                                                      \% of total   Items with property</span>
+<div class="highlight"><pre><span></span>                                                                                          <span class="err">\</span><span class="o">%</span> <span class="n">of</span> <span class="n">total</span>   <span class="n">Items</span> <span class="n">with</span> <span class="n">property</span>
+  <span class="o">-------------------------------------------------------------------------------------</span> <span class="o">-------------</span> <span class="o">---------------------</span>
+  <span class="p">[</span><span class="n">ethnic</span> <span class="n">group</span><span class="p">](</span><span class="nl">http</span><span class="p">:</span><span class="c1">//www.wikidata.org/wiki/Property:P172)                                     0.30                 7,772</span>
+  <span class="n">country</span><span class="o">*</span>                                                                                     <span class="mf">23.47</span>               <span class="mi">601</span><span class="p">,</span><span class="mi">361</span>
+  <span class="p">[</span><span class="n">place</span> <span class="n">of</span> <span class="n">birth</span><span class="p">](</span><span class="nl">http</span><span class="p">:</span><span class="c1">//www.wikidata.org/wiki/Property:P19)                                   23.93               613,092</span>
+  <span class="p">[</span><span class="n">date</span> <span class="n">of</span> <span class="n">death</span><span class="p">](</span><span class="nl">http</span><span class="p">:</span><span class="c1">//www.wikidata.org/wiki/Property:P570)                                   28.79               737,522</span>
+  <span class="p">[</span><span class="n">citizenship</span><span class="p">](</span><span class="nl">http</span><span class="p">:</span><span class="c1">//www.wikidata.org/wiki/Property:P27)                                      41.44             1,061,634</span>
+  <span class="n">culture</span><span class="o">**</span>                                                                                   <span class="mf">45.20</span>             <span class="mi">1</span><span class="p">,</span><span class="mi">158</span><span class="p">,</span><span class="mi">086</span>
+  <span class="p">[</span><span class="n">date</span> <span class="n">of</span> <span class="n">birth</span><span class="p">](</span><span class="nl">http</span><span class="p">:</span><span class="c1">//www.wikidata.org/wiki/Property:P569)                                   57.92             1,484,003</span>
+  <span class="p">[</span><span class="n">gender</span><span class="p">](</span><span class="nl">https</span><span class="p">:</span><span class="c1">//www.wikidata.org/wiki/Property:P21)                                          89.40             2,290,433</span>
+  <span class="p">[</span><span class="n">at</span> <span class="n">least</span> <span class="n">one</span> <span class="n">site</span> <span class="n">link</span><span class="p">](</span><span class="nl">https</span><span class="p">:</span><span class="c1">//www.wikidata.org/wiki/Wikidata:Glossary#Sitelinks)           99.05             2,537,545</span>
+  <span class="n">a</span> <span class="s">&quot;Q&quot;</span> <span class="n">ID</span>                                                                                     <span class="mf">100.00</span>             <span class="mi">2</span><span class="p">,</span><span class="mi">561</span><span class="p">,</span><span class="mi">999</span>
 </pre></div>
 
 
-<hr>
-<p><a href="http://www.wikidata.org/wiki/Property:P172">ethnic group</a>                                     0.30                 7,772
-  country*                                                                                     23.47               601,361
-  <a href="http://www.wikidata.org/wiki/Property:P19">place of birth</a>                                   23.93               613,092
-  <a href="http://www.wikidata.org/wiki/Property:P570">date of death</a>                                   28.79               737,522
-  <a href="http://www.wikidata.org/wiki/Property:P27">citizenship</a>                                      41.44             1,061,634
-  culture**                                                                                   45.20             1,158,086
-  <a href="http://www.wikidata.org/wiki/Property:P569">date of birth</a>                                   57.92             1,484,003
-  <a href="https://www.wikidata.org/wiki/Property:P21">gender</a>                                          89.40             2,290,433
-  <a href="https://www.wikidata.org/wiki/Wikidata:Glossary#Sitelinks">at least one site link</a>           99.05             2,537,545
-  a "Q" ID                                                                                     100.00             2,561,999</p>
 <p><strong>*country</strong> is determined by seeing if the <em>place of birth</em> is a country, or if it is a city, see if the city has a <em>country</em> property</p>
 <p><strong>**culture</strong> is determined by using translating <em>ethnic group</em>, <em>place of birth</em>, and <em>citizenship</em> into 1 of 9 world cultures as per <a href="https://en.wikipedia.org/wiki/Inglehart%E2%80%93Welzel_cultural_map_of_the_world">Inglehart-Welzel map of the world</a> with Mechanical Turk. Then we take the consensus of the three aggregated variables. (Actually there were no disagreements between the three variables.) All aggregation maps are available for inspection <a href="https://github.com/notconfusing/WIGI/tree/master/helpers/aggregation_maps">on github</a>.</p>
-<p>Now the first derived and naive statistic of interest - the total gender breakdown. As we've seen above <strong>10.3% is of unknown</strong> gender, otherwise we encounter <strong>75.7% male, 13.9% female, and \&lt;.01% nonbinary</strong> which is perhaps better described as 152 cases.</p>
+<p>Now the first derived and naive statistic of interest - the total gender breakdown. As we've seen above <strong>10.3% is of unknown</strong> gender, otherwise we encounter <strong>75.7% male, 13.9% female, and &lt;.01% nonbinary</strong> which is perhaps better described as 152 cases.</p>
 <h2>Sanity Checking With Historical Data</h2>
 <p>We want some sanity checking that the data from Wikidata reflects the world at large. To do this we compared our total population per year, calculated by date of birth, versus the world population.</p>
-<p>Comparing the <strong>Wikidata</strong> data to <a href="https://commons.wikimedia.org/wiki/File:Population_curve.svg">historical <strong>census data</strong></a>  we find a high significant correlation in total population - Pearson correlation <strong>coefficent = .983</strong> with  p\&lt;0.01. This lends some credence to the notion that this dataset reflects the world at large. (By the way the historical data trends backwards to 10,000 BCE, but the earliest date of birth in Wikidata is about 4,000 BCE.)</p>
+<p>Comparing the <strong>Wikidata</strong> data to <a href="https://commons.wikimedia.org/wiki/File:Population_curve.svg">historical <strong>census data</strong></a>  we find a high significant correlation in total population - Pearson correlation <strong>coefficent = .983</strong> with  p&lt;0.01. This lends some credence to the notion that this dataset reflects the world at large. (By the way the historical data trends backwards to 10,000 BCE, but the earliest date of birth in Wikidata is about 4,000 BCE.)</p>
 <h2>Total Biographies Over Time</h2>
 <p>These graphs show the <strong>absolute volume</strong> of items by <strong>date of birth</strong> and <strong>death by</strong> <strong>gender</strong>, and over <strong>all time, and 1800 onwards</strong>.<a href="https://notconfusing.github.io/images/uploads/2015/01/dob_dod_totals_pretty.png"><img alt="dob_dod_totals_pretty" class="size-full wp-image-3649 alignnone" src="https://notconfusing.github.io/images/uploads/2015/01/dob_dod_totals_pretty.png" style="width:816px !important"></a></p>
 <p>This first visualization of the gender gap shows how Wikipedia's retroactive focus on history has been consistent in it's bias in representing females. It's also generally quite a smooth curve save for some noticable spikes around World War I and II.</p>
@@ -129,7 +129,7 @@
 <li>There is no good way to aggregate cultures perfectly. Aggregation in general assumes some loss of fidelity. The point in doing so is to gain a broader-stroke picture, and in this case simplify visualizations.</li>
 <li>The method we used for aggregation - starting from the <a href="https://en.wikipedia.org/wiki/Inglehart%E2%80%93Welzel_cultural_map_of_the_world">Inglehart-Welzel map of the world</a> (right), and then "mechanical turking" in the rest of the values - comes loaded with it's own cultural baggage and perspective.<a href="https://commons.wikimedia.org/wiki/File%3AInglehart_Values_Map2.svg"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Inglehart_Values_Map2.svg/691px-Inglehart_Values_Map2.svg.png" style="width:691px !important"></a> By DancingPhilosopher [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons[/caption]</li>
 <li>Inglehart-Welzel map only really makes sense for modern geopolitical boundaries. For instance the notion of having a <em>Protestant</em> and <em>Catholic</em> world before Protestantism and Catholicism, does not make sense. We use those soft modern boundaries superimposed over the geographical region to determine historical values. So if you were born in ancient Greece, you are known as O<em>rthodox</em> in this method.</li>
-<li>Some ethnicities were a mixture of two cultures, like "Thai-American", in those cases we took the modifier, so we'd use "Thai" -> <em>South Asian.</em> There are two ways to do this and both of them are not very good, we make a compromise to get a rough picture. <a href="https://github.com/notconfusing/WIGI/tree/master/helpers/aggregation_maps">The full data is available for more munging if you would like to fine tune it</a>.</li>
+<li>Some ethnicities were a mixture of two cultures, like "Thai-American", in those cases we took the modifier, so we'd use "Thai" -&gt; <em>South Asian.</em> There are two ways to do this and both of them are not very good, we make a compromise to get a rough picture. <a href="https://github.com/notconfusing/WIGI/tree/master/helpers/aggregation_maps">The full data is available for more munging if you would like to fine tune it</a>.</li>
 <li>We aggregate the the 9 cultures from 3 similar but different Wikidata properties in <em>citizenship, ethnic group, and place of birth.</em> Since each of those are different concepts, a conflict may arise - however in this research we did not find a case where different property aggregations gave different world cultures.</li>
 </ul>
 <h2>Gender Ratios By Culture</h2>
@@ -180,52 +180,58 @@
 <p>Likewise you can see that in general the heatmap transitions to being darker at the top than bottom, so we have shifted to being <strong>more celebrity conscious in most languages in recent years</strong>.</p>
 <p>Lastly we see some vertical-striped features showing that for instance <strong>Tagalog is prone to being celebrity conscious across gender and time</strong>.</p>
 <p>To determine the significance of the effects we perform a logistic regression analysis in predicting the celebrity percentage variable. The coefficient matrix is printed below.</p>
-<hr>
-<div class="highlight"><pre><span></span><span class="err">          coef       std err   z        P\&gt;\|z\|   \[95.0% Conf. Int.\]</span>
+<div class="highlight"><pre><span></span><span class="err">  ----------- ---------- --------- -------- ---------- ----------------------</span>
+<span class="err">              coef       std err   z        P&gt;\|z\|   \[95.0% Conf. Int.\]</span>
+<span class="err">  decade      0.0236     0.013     1.823    0.068      -0.002 0.049</span>
+<span class="err">  enwiki      0.0509     0.875     0.058    0.954      -1.664 1.766</span>
+<span class="err">  jawiki      0.7763     0.837     0.927    0.354      -0.865 2.418</span>
+<span class="err">  kowiki      1.3834     0.832     1.662    0.097      -0.248 3.015</span>
+<span class="err">  tlwiki      3.0009     0.945     3.176    0.001      1.149 4.853</span>
+<span class="err">  urwiki      0.8901     0.869     1.025    0.306      -0.813 2.593</span>
+<span class="err">  zhwiki      0.5383     0.846     0.637    0.524      -1.119 2.196</span>
+<span class="err">  female      1.3580     0.453     2.999    0.003      0.471 2.245</span>
+<span class="err">  intercept   -47.9056   25.368    -1.888   0.059      -97.626 1.815</span>
+<span class="err">  ----------- ---------- --------- -------- ---------- ----------------------</span>
 </pre></div>
 
 
-<p>decade      0.0236     0.013     1.823    0.068      -0.002 0.049
-  enwiki      0.0509     0.875     0.058    0.954      -1.664 1.766
-  jawiki      0.7763     0.837     0.927    0.354      -0.865 2.418
-  kowiki      1.3834     0.832     1.662    0.097      -0.248 3.015
-  tlwiki      3.0009     0.945     3.176    0.001      1.149 4.853
-  urwiki      0.8901     0.869     1.025    0.306      -0.813 2.593
-  zhwiki      0.5383     0.846     0.637    0.524      -1.119 2.196
-  female      1.3580     0.453     2.999    0.003      0.471 2.245
-  intercept   -47.9056   25.368    -1.888   0.059      -97.626 1.815</p>
-<hr>
-<p>Depending on which arbitrary significance threshold you choose to use, we find different answers, but at least the<strong> <em>female, </em>and <em>Tagalog</em>, variables are significant with p\&lt;0.05</strong>. If we loosen the significance threshold slighly, <em>decade, </em>and <em>Korean</em> also become predictors. This lends a lot of credence to the notion that in the cases in which Women are recorded in Wikipedias, they have a strong tendency to be a celebrity.</p>
+<p>Depending on which arbitrary significance threshold you choose to use, we find different answers, but at least the<strong> <em>female, </em>and <em>Tagalog</em>, variables are significant with p&lt;0.05</strong>. If we loosen the significance threshold slighly, <em>decade, </em>and <em>Korean</em> also become predictors. This lends a lot of credence to the notion that in the cases in which Women are recorded in Wikipedias, they have a strong tendency to be a celebrity.</p>
 <h2>Connections To The World Economic Forum Index</h2>
 <p>Indexes are useful, but they are more useful as a group of compatible and comparable indexes. We c<strong>ompared our place of birth and citizenship data as it related to gender, to the <a href="" title="http://reports.weforum.org/global-gender-gap-report-2014/rankings/">World Economic Forum Gender Gap Index</a></strong>. The World Economic Forum uses its own methodology to produce a scalar value on the interval (0,1) to rank the gender equality of a country. To match to that format, we take the Wikidata data in the form of female composition of biographies by country.</p>
 <p>We performed a calibration step to see which time window of data would produce our ranking of countries most closely being correlated with the World economic forum. If the Wikidata dataset is used with the time window only considering the biographies with date of birth between 1890 and 1990, the Spearman rank correlation is 0.31 with a p value of 0.03. That means that there is <strong>some founding for accepting the female composition of Wikidata items of humans associated with a country as an inequality index</strong>, because is significantly correlated with other respected inequality indexes.</p>
 <p>Here is a sample of the two rankings side-by-side. We display the top 10 as per the World Economic Forum rank, and then the top 10 as per the Wikipedia Rank. You'll aslo see the associated WIGI rank, the raw scores for each, and the difference in the ranking.<br>
 <em>World Economic Forum Top 10</em></p>
-<p>Country       WEF Rank   Wikipedia Rank   WEF Score   Wikipedia Score   Rank Difference</p>
-<hr>
-<p>Iceland       1          30               0.8594      0.1895            -29
-  Finland       2          39               0.8453      0.1807            -37
-  Norway        3          22               0.8374      0.2142            -19
-  Sweden        4          1                0.8165      0.3452            3
-  Denmark       5          20               0.8025      0.2149            -15
-  Nicaragua     6          9                0.7894      0.2727            -3
-  Rwanda        7          108              0.7854      0.0962            -101
-  Ireland       8          64               0.7850      0.1586            -56
-  Philippines   9          3                0.7814      0.3228            6
-  Belgium       10         58               0.7809      0.1637            -48</p>
+<div class="highlight"><pre><span></span><span class="err">  Country       WEF Rank   Wikipedia Rank   WEF Score   Wikipedia Score   Rank Difference</span>
+<span class="err">  ------------- ---------- ---------------- ----------- ----------------- -----------------</span>
+<span class="err">  Iceland       1          30               0.8594      0.1895            -29</span>
+<span class="err">  Finland       2          39               0.8453      0.1807            -37</span>
+<span class="err">  Norway        3          22               0.8374      0.2142            -19</span>
+<span class="err">  Sweden        4          1                0.8165      0.3452            3</span>
+<span class="err">  Denmark       5          20               0.8025      0.2149            -15</span>
+<span class="err">  Nicaragua     6          9                0.7894      0.2727            -3</span>
+<span class="err">  Rwanda        7          108              0.7854      0.0962            -101</span>
+<span class="err">  Ireland       8          64               0.7850      0.1586            -56</span>
+<span class="err">  Philippines   9          3                0.7814      0.3228            6</span>
+<span class="err">  Belgium       10         58               0.7809      0.1637            -48</span>
+</pre></div>
+
+
 <p><em>WIGI Top 10</em></p>
-<p>Country                      WEF Rank   Wikipedia Rank   WEF Score   Wikipedia Score   Rank Difference</p>
-<hr>
-<p>Sweden                       4          1                0.8165      0.3452            3
-  South Korea                  117        2                0.6403      0.3437            115
-  Philippines                  9          3                0.7814      0.3228            6
-  Bahrain                      124        4                0.6261      0.3171            120
-  Mauritius                    106        5                0.6541      0.2941            101
-  People's Republic of China   87         6                0.6830      0.2812            81
-  Australia                    24         7                0.7409      0.2760            17
-  Japan                        104        8                0.6584      0.2732            96
-  Nicaragua                    6          9                0.7894      0.2727            -3
-  Swaziland                    92         10               0.6772      0.2593            82</p>
+<div class="highlight"><pre><span></span><span class="err">  Country                      WEF Rank   Wikipedia Rank   WEF Score   Wikipedia Score   Rank Difference</span>
+<span class="err">  ---------------------------- ---------- ---------------- ----------- ----------------- -----------------</span>
+<span class="err">  Sweden                       4          1                0.8165      0.3452            3</span>
+<span class="err">  South Korea                  117        2                0.6403      0.3437            115</span>
+<span class="err">  Philippines                  9          3                0.7814      0.3228            6</span>
+<span class="err">  Bahrain                      124        4                0.6261      0.3171            120</span>
+<span class="err">  Mauritius                    106        5                0.6541      0.2941            101</span>
+<span class="err">  People&#39;s Republic of China   87         6                0.6830      0.2812            81</span>
+<span class="err">  Australia                    24         7                0.7409      0.2760            17</span>
+<span class="err">  Japan                        104        8                0.6584      0.2732            96</span>
+<span class="err">  Nicaragua                    6          9                0.7894      0.2727            -3</span>
+<span class="err">  Swaziland                    92         10               0.6772      0.2593            82</span>
+</pre></div>
+
+
 <p>We see how the rankings bear some similarity, but that the correlation is mild. Still we can take away that the notion of what the WEF is driving at with it's measure, and the number of female biographies that exist about humans in a country, as somewhat related idea.</p>
 <h2>Data Reliability</h2>
 <p>The question of how well Wikidata accurately reflects all Wikipedias, is important to determine before addressing the question of how well Wikipedias reflect the world at-large.</p>
@@ -244,7 +250,7 @@
 <blockquote>
 <p>Our research confirms that gender inequality is a phenomenon with a long history, but whose patterns can be analyzed and quantified on a larger scale than previously thought possible. Through the use of Inglehart-Welzel cultural clusters, we show that gender inequality can be analyzed with regards to world’s cultures. In the dimension studied (coverage of females and other genders in reference works) we show a steadily improving trend, through one with aspects that deserve careful follow up analysis (such as the surprisingly high ranking of the Confucian and South Asian clusters).</p>
 </blockquote>
-<p><strong>Tweet at me <a href="https://twitter.com/notconfusing">\@notconfusing</a></strong> .</p>
+<p><strong>Tweet at me <a href="https://twitter.com/notconfusing">@notconfusing</a></strong> .</p>
 <h2>Code</h2>
 <p>I programmed all of this research in using the IPython notebook, and it's <strong>all entirely open source</strong> and hopefully reproducible from <a href="https://github.com/notconfusing/WIGI#readme">https://github.com/notconfusing/WIGI</a>.</p>
 <p>I plan to start parsing and filtering Wikidata montly to provide updated data, which should be coming soon.</p>

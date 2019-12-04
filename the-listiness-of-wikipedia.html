@@ -117,8 +117,8 @@ Although it was only an aside, an answer of "What is a Reference work?" caught m
 :::</p>
 <p>::: {.inner_cell}
 ::: {.text_cell_render .border-box-sizing .rendered_html}
-Analysing a May 2014 copy of English Wikipedia, we look at the listiness of all articles in the main namespace. To do this I used the <code>xml_dump</code> library from the excellent <a href="https://pypi.python.org/pypi/mediawiki-utilities/0.2.1">mediawiki-utilities</a> by [<a href="https://twitter.com/halfak">\@halfak</a>]{.citation}.</p>
-<p>In <a href="https://www.wikidata.org/wiki/Q826308">wikitext</a> lists are identified, by the prepending of a line with the characters __*__ (unordered list) and <strong>#</strong> (numbered list). Additionally there are Infoboxes, which use | (pipe character) and tables whose rows begin with |- (pipe dash). What percentage of lines begin with any of these characters therefore determine the share of list of an article, or the "listiness" as I am now coining it.</p>
+Analysing a May 2014 copy of English Wikipedia, we look at the listiness of all articles in the main namespace. To do this I used the <code>xml_dump</code> library from the excellent <a href="https://pypi.python.org/pypi/mediawiki-utilities/0.2.1">mediawiki-utilities</a> by [<a href="https://twitter.com/halfak">@halfak</a>]{.citation}.</p>
+<p>In <a href="https://www.wikidata.org/wiki/Q826308">wikitext</a> lists are identified, by the prepending of a line with the characters ____ (unordered list) and <strong>#</strong> (numbered list). Additionally there are Infoboxes, which use | (pipe character) and tables whose rows begin with |- (pipe dash). What percentage of lines begin with any of these characters therefore determine the share of list of an article, or the "listiness" as I am now coining it.</p>
 <p>We do not allow redirect pages - pages with a starting '#' character and are one line long. Those pages which are not redirects, we term 'canonical pages'. We do not allow "talk" pages either.</p>
 <p>So for instance, we can look at the statistics of each of these different line-starting characters. Below are the mean number of these line-startings per page.
 :::
@@ -155,7 +155,7 @@ Out[3]:
 :::</p>
 <p>::: {.output_html .rendered_html .output_subarea .output_pyout}
 ::: {style="max-height: 1000px; max-width: 1500px; overflow: auto;"}
-         *          #         |-         |           total</p>
+        _          #         |-         |           total</p>
 <hr>
 <p>mean   6.660130    0.457347   3.392566    29.755385    2284.055053
   std    33.667805   7.173435   24.983288   124.254805   4120.072758</p>
@@ -338,9 +338,9 @@ Out[2]:
 :::</p>
 <p>::: {.output_html .rendered_html .output_subarea .output_pyout}
 ::: {style="max-height: 1000px; max-width: 1500px; overflow: auto;"}
-          *          #          |-         |          total</p>
+         _          #          |-         |          total</p>
 <hr>
-<p>*      1.000000    0.016075    0.049516    0.045971    -0.093864
+<p>_      1.000000    0.016075    0.049516    0.045971    -0.093864
   #      0.016075    1.000000    0.019311    0.023440    -0.031146
   |-     0.049516    0.019311    1.000000    0.764544    -0.045862
   |      0.045971    0.023440    0.764544    1.000000    -0.093092
@@ -419,7 +419,7 @@ Out[74]:
 ::: {.text_cell_render .border-box-sizing .rendered_html}
 As one might expect, the word "list" is the second most occurring word in titles of the listiest articles. These articles represent 36% of all the articles that have list in their title, which is significantly higher than what we'd expect on with no other information - 3%. Even "in" and "by" some occur slightly more than expected. This should make sense if you've ever browsed a Wikipedia article with a title something like <a href="https://en.wikipedia.org/wiki/List_of_lists_of_lists">"List of [x] by [y]" or "List of [x] in [z]"</a>.</p>
 <p>The remainder of this Top 20 just goes to show how sport fans have chronicled results with great zeal. And the inexplicability of their zeal is an analogue to my curiosity for investigating this topic.</p>
-<p>Contact me with more ideas of question on twitter [[\@notconfusing]]{.citation}(https://twitter.com/notconfusing)‽‽‽</p>
+<p>Contact me with more ideas of question on twitter [[@notconfusing]]{.citation}(https://twitter.com/notconfusing)‽‽‽</p>
 <p>Find all the code for this analysis at https://github.com/notconfusing/listiness .
 :::
 :::

@@ -1,0 +1,8 @@
+img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
+	height: auto;
+	max-width: 100%;
+}
+
+header.container {
+	max-height: 240px;
+}

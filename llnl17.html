@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="My internship this summer at Lawrence Livermore National Lab was nothing if not practical. The exceedingly real objectives of government science gave my first foray into deep learning gravitas and...">
         <meta name="keywords" content="">
-        <link rel="icon" href="https://notconfusing.github.io/favicon.ico">
+        <link rel="icon" href="https://notconfusing.com/favicon.ico">
 
         <title>Synthetic Training Data For Rare Object Detection in Computer Vision - notconfusing.com</title>
 
         <!-- Stylesheets -->
-        <link href="https://notconfusing.github.io/theme/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://notconfusing.github.io/theme/css/fonts.css" rel="stylesheet">
-        <link href="https://notconfusing.github.io/theme/css/nest.css" rel="stylesheet">
-        <link href="https://notconfusing.github.io/theme/css/pygment.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/fonts.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/nest.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/pygment.css" rel="stylesheet">
         <!-- /Stylesheets -->
 
         <!-- RSS Feeds -->
@@ -33,20 +33,20 @@
     <body>
 
         <!-- Header -->
-    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://notconfusing.github.io/images/header1200x360.jpg'); background-position: center; ">
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://notconfusing.com/images/header1200x360.jpg'); background-position: center; ">
 
             <!-- Static navbar -->
             <div class="container">
                 <div class="header-nav">
                     <div class="header-logo">
-                        <a class="pull-left" href="https://notconfusing.github.io/"><img class="mr20" src="https://notconfusing.github.io/extra/logo.svg" alt="logo">notconfusing.com</a>
+                        <a class="pull-left" href="https://notconfusing.com/"><img class="mr20" src="https://notconfusing.com/extra/logo.svg" alt="logo">notconfusing.com</a>
                     </div>
                     <div class="nav pull-right">
-                                <a href="https://notconfusing.github.io/">About</a>
-                                <a href="https://notconfusing.github.io/category/essays">Essays</a>
-                                <a href="https://notconfusing.github.io/category/research-notes">Research Notes</a>
-                                <a href="https://notconfusing.github.io/category/blog">Other thoughts</a>
-                                <a href="https://notconfusing.github.io/category/hacking">Hacking</a>
+                                <a href="https://notconfusing.com/">About</a>
+                                <a href="https://notconfusing.com/category/essays">Essays</a>
+                                <a href="https://notconfusing.com/category/research-notes">Research Notes</a>
+                                <a href="https://notconfusing.com/category/blog">Other thoughts</a>
+                                <a href="https://notconfusing.com/category/hacking">Hacking</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
               <div class="col-lg-12">
                   <div class="header-content">
                       <h1 class="header-title">Synthetic Training Data For Rare Object Detection in Computer Vision</h1>
-                      <p class="header-date">By <a href="https://notconfusing.github.io/author/max.html">max</a>, Sat 05 August 2017, in category <a href="https://notconfusing.github.io/category/research-notes.html">Research-notes</a></p>
+                      <p class="header-date">By <a href="https://notconfusing.com/author/max.html">max</a>, Sat 05 August 2017, in category <a href="https://notconfusing.com/category/research-notes.html">Research-notes</a></p>
                       <div class="header-underline"></div>
                       <div class="clearfix"></div>
                       <p class="pull-right header-tags">
@@ -82,7 +82,7 @@
 <p>The domain was satellite imagery, and the research question was whether computer vision could be trained to identify objects for which we have no training data. This presents a problem for the family of convolutional neural network algorithms (CNNs) which on the contrary require lots examples to learn from. The idea that I implemented to address this conundrum was to "synthetically" manufacture training data with renders from CAD software, and then test its performance on "natural" (i.e. real) examples. To experiment we used the C5 airplane -- one of the largest in existence, measuring about 80 pixels at Google Earth maximum zoom -- and found that even in its simplest form, the problem is quite hard. The naïve approach of just slapping an overhead snap from sketchup onto a background yielded almost no benefit above guessing. With randomization in the brightness, contrast, position, and emulation of lens impurities, in the synthetic training images, the best performance we managed to eke was a beginning-to-be-promising 78%.</p>
 <p>Of course the details of the neural net were important as well as novel-portion of  optimizing the synthetic image pipeline. The base CNN which I started with was a standard <a href="https://arxiv.org/pdf/1409.1556.pdf">"VGG" implementation</a>, using <a href="https://keras.io">Keras</a>. Desirous to get beyond off-the-shelf, I found that: early stopping, extra dropout between the convolutional layers, added gaussian noise at the input layer, and label-persevering transformations all helped with the cause. Learning about and wielding these techniques in practice felt very powerful, and I can understand why the buzz about them exists. I am very glad to have added deep learning and neural networks to my tool belt. In fact it has inspired me to go back to <a href="http://notconfusing.com/machine-learning-in-3rd-grade/">previous projects</a> and see how the method can improve upon the classic algorithms.</p>
 <p>Another summer leveling up without confusion.</p>
-<p><a href="http://notconfusing.com/images/Synth-Train-Poster_v3.pdf"><img alt="" class="size-large wp-image-4137" src="https://notconfusing.github.io/images/uploads/2017/08/Selection_050.png" style="width:474px !important"></a> Poster (click for pdf).</p>
+<p><a href="http://notconfusing.com/images/Synth-Train-Poster_v3.pdf"><img alt="" class="size-large wp-image-4137" src="https://notconfusing.com/images/uploads/2017/08/Selection_050.png" style="width:474px !important"></a> Poster (click for pdf).</p>
 
 
 
@@ -96,7 +96,7 @@
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
                         <div class="footer-title">Sitemap</div>
                         <ul class="list-unstyled">
-                            <li><a href="https://notconfusing.github.io/blog_index.html">Latest posts</a></li>
+                            <li><a href="https://notconfusing.com/blog_index.html">Latest posts</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">

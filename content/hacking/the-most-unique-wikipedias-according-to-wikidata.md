@@ -1,0 +1,40 @@
+Title: The Most Unique Wikipedias According To Wikidata
+Date: 2013-06-12 20:14
+Author: max
+Category: hacking
+Slug: the-most-unique-wikipedias-according-to-wikidata
+Status: published
+
+If you read Wikipedia in a more than one language you'll have noticed the sidebar sometimes ready to link you to the topic of the current article in one or more other languages. If you've been following the trends you'll know that Wikidata is now in charge of keeping these language links in order. (To understand more about how Wikidata works watch my [youtube tutorial](http://www.youtube.com/watch?v=cMMzfG9LITc&feature=youtu.be) starting at 5:15) One upshot of that is that we can easily count these links and understand more about the Wikipedia projects - like how "unique" different Wikipedias are. I **define** a **unique Wikidata Item** ** of a **language X** to be a Wikidata Item that has only one language link, and the language link is in language X. I also find the total number of items that have occurrences of language X in their language links. Below I graph then total items against unique items for every Wikipedia language, first on a linear scale and then on logarithmic scale.
+
+[![]({static}/images/uploads/2013/06/LangLinks_linear.png "LangLinks_linear"){.wp-image-258 style="width:512px !important"}]({static}/images/uploads/2013/06/LangLinks_linear.png) Wikidata languages comparing unique versus total items. Linear scale. \[Click to expand\] 
+
+[![]({static}/images/uploads/2013/06/LangLinks_log.png "LangLinks_log"){.wp-image-259 style="width:512px !important"}]({static}/images/uploads/2013/06/LangLinks_log.png) Wikidata languages comparing unique versus total items. Logarithmic scale. \[Click to expand\]We can see how far and away English is in both absolute uniques and total items, that's unsurprising. What's curious though is that you can see from the linear plot, the a curve fitting the data appears to be roughly parabolic or exponential. That would indicate that the more total items a language has, the greater the chance it that those items are unique. This might seem obvious, but it doesn't neccesarily have to be. It could be that the English Items were half covered by German, and the other half French for instance (but it isn't).  
+If you look at the Logarithmic plot, you'll still see the same line of best fit in blue, which represents the expected level of unique items for a Wikipedia at a given total size. If a Wikipedia lies above the line, it's more unique than expected, and if it lies below the line its less unique than expected. For instance at the high end of the total axis German and Chinese show higher than expected uniqueness, and Dutch and Polish are slightly under. It's fun if you have the time to draw an imaginary vertical line in the middle of the plot and see at a fixed total size the varying uniquenesses of different Wikipedias.  
+By now you might be asking to look at these Wikipedias as ratio of \[Unique Items\] / \[Total Items\]. Below it a plot doing just that. They are ordered and coloured on how large their total size is a percentage of English's total size. Then they're split into two categories, wikis with more than 100,000 items and those with less.
+
+[![]({static}/images/uploads/2013/06/Uniquenesses.png "Uniquenesses"){.wp-image-261 style="width:512px !important"}]({static}/images/uploads/2013/06/Uniquenesses.png) Uniqueness percentage of Wikipedias ordered by total size. \[Click to expand\]A good way to read this chart is to look at the tallest bars compared how far left they are. If two bars are of equal heights the one on the left is coming from a smaller total Wikipedia, and is therefore more impressive at having that uniqueness ratio. Of the 100,000 or more category, English sets the standard at 49% unique. However Arabic Wikipedia is a high performer in its class because its 35.77% uniqueness comes in the middle of the pack.
+
+UPDATE: By request I replotted the above uniqunesses. but with the X axis ordered by [usage defined by hourly page views](http://stats.wikimedia.org/EN/Sitemap.htm). It seems like there is a higher correlation this way too. (Credit for this intuition goes to Italian Wikipedian "User:Nemo_bis")
+
+[![]({static}/images/uploads/2013/06/Uniqunesses-by-Usage.png "Uniqunesses by Usage"){.wp-image-269 style="width:512px !important"}]({static}/images/uploads/2013/06/Uniqunesses-by-Usage.png) Uniqueness percentage of Wikipedias ordered by hourly page views. \[Click to expand\]Again Arabic does well, and German Wikipedia becomes more impressive as it less visited than it has total articles.
+
+Now let's go back to our definition of uniqueness - an item with just one language link. We can ask the question, how much of Wikidata only has 1 language link? And how much has 2, 3, 4, 5, 6 language links, .... all the way to 286, the maximum since there are 286 Wikipedia languages. In fact there is only one page in all the 286 items, the ["Main Page"](https://www.wikidata.org/wiki/Q5296).
+
+Here's the composition of Wikidata by the number of language links of each item. I've broken it up into 4 plots of increasing zoom, and coloured it to show its fractal nature.
+
+[![]({static}/images/uploads/2013/06/Composition_zoom-effect.png "Composition_zoom effect"){.wp-image-257 style="width:512px !important"}]({static}/images/uploads/2013/06/Composition_zoom-effect.png) Composition of Wikidata by the number of language links of each item. \[Click to enlarge\]I define an **n-cluster** to be the set of items that have **n language links**. Two-thirds of Wikidata items are in the 1-cluster. 13.3% of Wikidata exists as a 2-cluster, 6.2% are a 3-cluster, and 3.4% are a 4-cluster. The lowest n-cluster to have no items is the 193-cluster, for comparison the 192-cluster has 10 items, and the 194-cluster has 4.
+
+All of this goes to show that if you picked a random article on a random Wikipedia, statistically it probably doesn't have an equivalent article in another language. However from empirical evidence, it seems otherwise, normally there is an interlanguage link. One hypothesis to explain this is that the articles we tend to read are usually more general interest. That suggests another more difficult question to answer, comparing n-clusters to page views. (Maybe a good topic for my next research.)
+
+For now lets turn our attention to another part of the composition graph. Since we've already looked at unique items, let's inspect the 2- and 3-clusters: "pairs" and "triples".
+
+![]({static}/images/uploads/2013/06/Composition_focus-effect.png "Composition_focus effect"){.alignnone .size-medium .wp-image-256 style="width:300px !important"}
+
+There are 1,578,043 items in the 2-cluster, and 735,573 in the 3-cluster. Each of those items are are cross of two or three languages. For now we'll focus on the the top 20 pairs and triples. Here they are, coloured to show whether English is in the cluster.
+
+[![]({static}/images/uploads/2013/06/Pairs-And-Triples.png "Pairs And Triples"){.wp-image-260 style="width:512px !important"}]({static}/images/uploads/2013/06/Pairs-And-Triples.png) Comparison of 20 highest occurring pairs and triples in Wikidata. \[Click to expand\]A lot of these pairs intuitively make sense from a cultural standpoint: English-German, Russian-Ukranian, Japanese-Chinese. As do some of the triples: English-German-French, English-French-Italian, Russian-Kazak-Bashkir.
+
+Some are more perplexing, especially the high prominence of Vietnamese, Cebuano, and Waray permuted with Swedish and Dutch. Were there some prolific translators? Machine translation bots? Is Wikidata not reflecting Wikipedia fully? Perhaps you can explain those correlations? In fact here is the data accurate as of 1 June 2013, and [code available on github.](https://github.com/notconfusing/langlink-analysis)
+
+> UPDATE: User Zolo on Wikidata wrote to me "I'll point out here that the Vietnamese-Dutch (and perhaps Cebuano-Waray-Swedish) cluster is most probably due to the high number of items about taxons. That also explains why they have relatively few "unique items"."

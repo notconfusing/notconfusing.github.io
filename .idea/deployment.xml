@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="maximilianklein@wigi.eqiad.wmflabs:22">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../pelican-themes/nest" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="maximilianklein@wigi.eqiad.wmflabs:22 (2)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../pelican-themes/nest" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="maximilianklein@wigi.eqiad.wmflabs:22 (3)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../pelican-themes/nest" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="notconfusing@54.89.2.158:22">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../pelican-themes/nest" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

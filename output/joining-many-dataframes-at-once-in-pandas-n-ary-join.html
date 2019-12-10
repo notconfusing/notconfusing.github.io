@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="::: {.cell .border-box-sizing .text_cell .rendered} ::: {.prompt .input_prompt} ::: ::: {.inner_cell} ::: {.text_cell_render .border-box-sizing .rendered_html} Joining many DataFrames at once with...">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://notconfusing.com/favicon.ico">
+
+        <title>Joining many DataFrames at once in Pandas: "n-ary Join" - notconfusing.com</title>
+
+        <!-- Stylesheets -->
+        <link href="https://notconfusing.com/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/fonts.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/nest.css" rel="stylesheet">
+        <link href="https://notconfusing.com/theme/css/pygment.css" rel="stylesheet">
+        <!-- /Stylesheets -->
+
+        <!-- RSS Feeds -->
+        <!-- /RSS Feeds -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://notconfusing.com/images/header1200x360.jpg'); background-position: center; ">
+
+            <!-- Static navbar -->
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-logo">
+                        <a class="pull-left" href="https://notconfusing.com/"><img class="mr20" src="https://notconfusing.com/extra/logo.svg" alt="logo">notconfusing.com</a>
+                    </div>
+                    <div class="nav pull-right">
+                                <a href="https://notconfusing.com/">About</a>
+                                <a href="https://notconfusing.com/category/essays">Essays</a>
+                                <a href="https://notconfusing.com/category/research-notes">Research Notes</a>
+                                <a href="https://notconfusing.com/category/blog">Other thoughts</a>
+                                <a href="https://notconfusing.com/category/hacking">Hacking</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Static navbar -->
+
+            <!-- Header -->
+    <!-- Header -->
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title">Joining many DataFrames at once in Pandas: "n-ary Join"</h1>
+                      <p class="header-date">By <a href="https://notconfusing.com/author/max.html">max</a>, Wed 11 February 2015, in category <a href="https://notconfusing.com/category/hacking.html">Hacking</a></p>
+                      <div class="header-underline"></div>
+                      <div class="clearfix"></div>
+                      <p class="pull-right header-tags">
+                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
+                      </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- /Header -->
+            <!-- /Header -->
+
+        </div>
+        <!-- /Header -->
+
+
+        <!-- Content -->
+    <div class="container content">
+        <p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+Joining many DataFrames at once with Reduce
+===========================================</p>
+<p>In my last project I wanted to compare many different Gender Inequality Indexes at once, including the one I had just come up with, called <a href="http://notconfusing.com/preliminary-results-from-wigi-the-wikipedia-gender-inequality-index/" title="Preliminary Results From WIGI, The Wikipedia Gender Inequality Index">"WIGI"</a>. The problem was that the rank and score data for each index was in a separate DataFrame. I need to perform repeated SQL-style <code>join</code>s. In this case I actually only had to join 5 dataframes, for 5 indices. But later, in helping my partner with her research, she came across the same problem needed to join more than 100. In my mind I saw that we wanted to accomplish this n-ary join. Mathematically I wanted this type of operation, which I couldn't find in <code>pandas</code>. <a href="https://notconfusing.com/images/uploads/2015/02/join.jpg"><img alt="join" class="aligncenter wp-image-3729 size-medium" src="https://notconfusing.com/images/uploads/2015/02/join.jpg" style="width:300px !important"></a></p>
+<p>The answer I enjoyed implementing, perhaps because I saw it as this type of repeated operation, is the <code>reduce</code> of functional programming.</p>
+<p>Ok, say we have these two data sets:
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [5]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    wigi
+:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+::: {.output}
+::: {.output_area}
+::: {.prompt .output_prompt}
+Out[5]:
+:::</p>
+<p>::: {.output_html .rendered_html .output_subarea .output_pyout}
+::: {style="max-height: 1000px; max-width: 1500px; overflow: auto;"}</p>
+<table class="dataframe" border="1">
+
+<thead>
+
+
+<tr style="text-align: right;">
+
+
+<th>
+
+:::
+:::
+:::
+:::
+:::
+:::
+
+
+</th>
+
+
+<th>
+
+Rank
+
+</th>
+
+
+<th>
+
+Score
+
+</th>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Economy
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+<tbody>
+
+
+<tr>
+
+
+<th>
+
+Republic of China
+
+</th>
+
+
+<td>
+
+1
+
+</td>
+
+
+<td>
+
+0.356890
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Kingdom of Denmark
+
+</th>
+
+
+<td>
+
+2
+
+</td>
+
+
+<td>
+
+0.347826
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Sweden
+
+</th>
+
+
+<td>
+
+3
+
+</td>
+
+
+<td>
+
+0.345212
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+South Korea
+
+</th>
+
+
+<td>
+
+4
+
+</td>
+
+
+<td>
+
+0.343662
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Hong Kong
+
+</th>
+
+
+<td>
+
+5
+
+</td>
+
+
+<td>
+
+0.342857
+
+</td>
+
+
+</tr>
+
+
+</tbody>
+
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [6]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    world_economic_forum
+:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+::: {.output}
+::: {.output_area}
+::: {.prompt .output_prompt}
+Out[6]:
+:::</p>
+<p>::: {.output_html .rendered_html .output_subarea .output_pyout}
+::: {style="max-height: 1000px; max-width: 1500px; overflow: auto;"}</p>
+<table class="dataframe" border="1">
+
+<thead>
+
+
+<tr style="text-align: right;">
+
+
+<th>
+
+:::
+:::
+:::
+:::
+:::
+:::
+
+
+</th>
+
+
+<th>
+
+Rank
+
+</th>
+
+
+<th>
+
+Score
+
+</th>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Economy
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+<tbody>
+
+
+<tr>
+
+
+<th>
+
+Iceland
+
+</th>
+
+
+<td>
+
+1
+
+</td>
+
+
+<td>
+
+0.8594
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Finland
+
+</th>
+
+
+<td>
+
+2
+
+</td>
+
+
+<td>
+
+0.8453
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Norway
+
+</th>
+
+
+<td>
+
+3
+
+</td>
+
+
+<td>
+
+0.8374
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Sweden
+
+</th>
+
+
+<td>
+
+4
+
+</td>
+
+
+<td>
+
+0.8165
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Denmark
+
+</th>
+
+
+<td>
+
+5
+
+</td>
+
+
+<td>
+
+0.8025
+
+</td>
+
+
+</tr>
+
+
+</tbody>
+
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+We'd probably join them like this:
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [7]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    wigi.join(world_economic_forum, how='outer', lsuffix='_wigi', rsuffix='_wef')
+:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+::: {.output}
+::: {.output_area}
+::: {.prompt .output_prompt}
+Out[7]:
+:::</p>
+<p>::: {.output_html .rendered_html .output_subarea .output_pyout}
+::: {style="max-height: 1000px; max-width: 1500px; overflow: auto;"}</p>
+<table class="dataframe" border="1">
+
+<thead>
+
+
+<tr style="text-align: right;">
+
+
+<th>
+
+:::
+:::
+:::
+:::
+:::
+:::
+
+
+</th>
+
+
+<th>
+
+Rank_wigi
+
+</th>
+
+
+<th>
+
+Score_wigi
+
+</th>
+
+
+<th>
+
+Rank_wef
+
+</th>
+
+
+<th>
+
+Score_wef
+
+</th>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Economy
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+<tbody>
+
+
+<tr>
+
+
+<th>
+
+Denmark
+
+</th>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+5
+
+</td>
+
+
+<td>
+
+0.8025
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Finland
+
+</th>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+2
+
+</td>
+
+
+<td>
+
+0.8453
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Hong Kong
+
+</th>
+
+
+<td>
+
+5
+
+</td>
+
+
+<td>
+
+0.342857
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Iceland
+
+</th>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+1
+
+</td>
+
+
+<td>
+
+0.8594
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Kingdom of Denmark
+
+</th>
+
+
+<td>
+
+2
+
+</td>
+
+
+<td>
+
+0.347826
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Norway
+
+</th>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+3
+
+</td>
+
+
+<td>
+
+0.8374
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Republic of China
+
+</th>
+
+
+<td>
+
+1
+
+</td>
+
+
+<td>
+
+0.356890
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+South Korea
+
+</th>
+
+
+<td>
+
+4
+
+</td>
+
+
+<td>
+
+0.343662
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+<td>
+
+NaN
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Sweden
+
+</th>
+
+
+<td>
+
+3
+
+</td>
+
+
+<td>
+
+0.345212
+
+</td>
+
+
+<td>
+
+4
+
+</td>
+
+
+<td>
+
+0.8165
+
+</td>
+
+
+</tr>
+
+
+</tbody>
+
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+But we want to generalize. Notice here we also inject the name of the DataFrame into the column names to avoid "suffix-hell" as I would like to term it.
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [1]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    import pandas</p>
+<div class="highlight"><pre><span></span><span class="n">def</span> <span class="n">make_df</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pandas</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">.</span><span class="n">from_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">filename</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">df</span><span class="p">.</span><span class="n">columns</span> <span class="o">=</span> <span class="k">map</span><span class="p">(</span><span class="n">lambda</span> <span class="n">col</span><span class="p">:</span> <span class="s1">&#39;{}_{}&#39;</span><span class="p">.</span><span class="n">format</span><span class="p">(</span><span class="n">str</span><span class="p">(</span><span class="n">col</span><span class="p">),</span> <span class="n">name</span><span class="p">),</span> <span class="n">df</span><span class="p">.</span><span class="n">columns</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+<span class="n">filenames</span> <span class="o">=</span> <span class="o">!</span><span class="n">ls</span>
+
+<span class="n">dfs</span> <span class="o">=</span> <span class="p">[</span><span class="n">make_df</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">for</span> <span class="n">filename</span> <span class="k">in</span> <span class="n">filenames</span><span class="p">]</span>
+</pre></div>
+
+
+<p>:::
+:::
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+Now here's the reducer. I actually end up wanting an inner join in the end, but the type of join is not important to illustrate the fact.</p>
+<p>Here we join 5 DataFrames at once.
+:::
+:::
+:::</p>
+<p>::: {.cell .border-box-sizing .code_cell .rendered}
+::: {.input}
+::: {.prompt .input_prompt}
+In [2]:
+:::</p>
+<p>::: {.inner_cell}
+::: {.input_area}
+::: {.highlight}
+    def join_dfs(ldf, rdf):
+        return ldf.join(rdf, how='inner')</p>
+<div class="highlight"><pre><span></span><span class="err">final_df = reduce(join_dfs, dfs) #that&#39;s the magic</span>
+<span class="err">final_df.head()</span>
+</pre></div>
+
+
+<p>:::
+:::
+:::
+:::</p>
+<p>::: {.output_wrapper}
+::: {.output}
+::: {.output_area}
+::: {.prompt .output_prompt}
+Out[2]:
+:::</p>
+<p>::: {.output_html .rendered_html .output_subarea .output_pyout}
+::: {style="max-height: 1000px; max-width: 1500px; overflow: auto;"}</p>
+<table class="dataframe" border="1">
+
+<thead>
+
+
+<tr style="text-align: right;">
+
+
+<th>
+
+:::
+:::
+:::
+:::
+:::
+:::
+
+
+</th>
+
+
+<th>
+
+Score_gdi
+
+</th>
+
+
+<th>
+
+Rank_gdi
+
+</th>
+
+
+<th>
+
+Score_gei
+
+</th>
+
+
+<th>
+
+Rank_gei
+
+</th>
+
+
+<th>
+
+Rank_sigi
+
+</th>
+
+
+<th>
+
+Score_sigi
+
+</th>
+
+
+<th>
+
+Rank_wdf
+
+</th>
+
+
+<th>
+
+Score_wdf
+
+</th>
+
+
+<th>
+
+Rank_wef
+
+</th>
+
+
+<th>
+
+Score_wef
+
+</th>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Economy
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+<th>
+
+
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+<tbody>
+
+
+<tr>
+
+
+<th>
+
+Nicaragua
+
+</th>
+
+
+<td>
+
+0.912
+
+</td>
+
+
+<td>
+
+102
+
+</td>
+
+
+<td>
+
+74
+
+</td>
+
+
+<td>
+
+37
+
+</td>
+
+
+<td>
+
+53
+
+</td>
+
+
+<td>
+
+0.8405
+
+</td>
+
+
+<td>
+
+13
+
+</td>
+
+
+<td>
+
+0.272727
+
+</td>
+
+
+<td>
+
+6
+
+</td>
+
+
+<td>
+
+0.7894
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Rwanda
+
+</th>
+
+
+<td>
+
+0.950
+
+</td>
+
+
+<td>
+
+80
+
+</td>
+
+
+<td>
+
+77
+
+</td>
+
+
+<td>
+
+19
+
+</td>
+
+
+<td>
+
+43
+
+</td>
+
+
+<td>
+
+0.8661
+
+</td>
+
+
+<td>
+
+134
+
+</td>
+
+
+<td>
+
+0.096154
+
+</td>
+
+
+<td>
+
+7
+
+</td>
+
+
+<td>
+
+0.7854
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Philippines
+
+</th>
+
+
+<td>
+
+0.989
+
+</td>
+
+
+<td>
+
+17
+
+</td>
+
+
+<td>
+
+76
+
+</td>
+
+
+<td>
+
+26
+
+</td>
+
+
+<td>
+
+57
+
+</td>
+
+
+<td>
+
+0.8235
+
+</td>
+
+
+<td>
+
+6
+
+</td>
+
+
+<td>
+
+0.322785
+
+</td>
+
+
+<td>
+
+9
+
+</td>
+
+
+<td>
+
+0.7814
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Belgium
+
+</th>
+
+
+<td>
+
+0.977
+
+</td>
+
+
+<td>
+
+38
+
+</td>
+
+
+<td>
+
+79
+
+</td>
+
+
+<td>
+
+12
+
+</td>
+
+
+<td>
+
+1
+
+</td>
+
+
+<td>
+
+0.9984
+
+</td>
+
+
+<td>
+
+73
+
+</td>
+
+
+<td>
+
+0.163734
+
+</td>
+
+
+<td>
+
+10
+
+</td>
+
+
+<td>
+
+0.7809
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th>
+
+Latvia
+
+</th>
+
+
+<td>
+
+1.033
+
+</td>
+
+
+<td>
+
+52
+
+</td>
+
+
+<td>
+
+77
+
+</td>
+
+
+<td>
+
+19
+
+</td>
+
+
+<td>
+
+24
+
+</td>
+
+
+<td>
+
+0.9489
+
+</td>
+
+
+<td>
+
+82
+
+</td>
+
+
+<td>
+
+0.157623
+
+</td>
+
+
+<td>
+
+15
+
+</td>
+
+
+<td>
+
+0.7691
+
+</td>
+
+
+</tr>
+
+
+</tbody>
+
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<p>::: {.cell .border-box-sizing .text_cell .rendered}
+::: {.prompt .input_prompt}
+:::</p>
+<p>::: {.inner_cell}
+::: {.text_cell_render .border-box-sizing .rendered_html}
+I really like the elegance of this solution. I admit there may be other ways to go about it with <code>pandas</code> only, and I understand the <code>R</code> mentality of "no for loops". Still this is precisely why I like <code>pandas</code> in python - you still get the freedom to play as you wish if it makes more sense to you.
+:::
+:::
+:::</p>
+
+
+
+    </div>
+        <!-- /Content -->
+
+        <!-- Footer -->
+        <div class="footer gradient-2">
+            <div class="container footer-container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Sitemap</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://notconfusing.com/blog_index.html">Latest posts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-title">Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/notconfusing" target="_blank">Twitter: @notconfusing</a></li>
+                            <li><a href="https://www.linkedin.com/in/notconfusing/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/notconfusing/" target="_blank">Github</a></li>
+                            <li><a href="https://scholar.google.com/citations?user=pIThn3YAAAAJ" target="_blank">Google Scholar</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <p class="pull-right text-right">
+                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            <small>CC-BY-SA Max Klein</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Footer -->
+    </body>
+</html>

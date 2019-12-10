@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4d635bd0-aaff-48ae-8101-f415742ac908" name="Default" comment="resaerch css and making the header fit">
+      <change beforePath="$PROJECT_DIR$/../pelican-themes/nest/static/css/nest.css" beforeDir="false" afterPath="$PROJECT_DIR$/../pelican-themes/nest/static/css/nest.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pelican-themes/nest/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/../pelican-themes/nest/templates/category.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="hostbot-ai.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/research/hostbot-ai.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="3636">
+                <caret line="201" selection-start-line="201" selection-end-line="201" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kumusha-takes-wiki-actionable-metrics-for-uganda-and-cote-divoire.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/kumusha-takes-wiki-actionable-metrics-for-uganda-and-cote-divoire.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="2126" column="3" lean-forward="true" selection-start-line="2126" selection-start-column="3" selection-end-line="2126" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kleins-search-for-klajnbohms-an-ancestral-research-trip-to-zwolen-poland.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/kleins-search-for-klajnbohms-an-ancestral-research-trip-to-zwolen-poland.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="102" column="82" selection-start-line="102" selection-start-column="82" selection-end-line="102" selection-end-column="82" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#p#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#10;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#14;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#p#16;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#19;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#21;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#25;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#26;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#27;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#30;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#p#31;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kumusha-takes-wiki-actionable-metrics-for-uganda-and-cote-divoire.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/research/kumusha-takes-wiki-actionable-metrics-for-uganda-and-cote-divoire.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="313">
+                <caret line="2125" column="323" selection-start-line="2125" selection-start-column="323" selection-end-line="2125" selection-end-column="323" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publishconf.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/publishconf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kleins-search-for-klajnbohms-an-ancestral-research-trip-to-zwolen-poland.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/blog/kleins-search-for-klajnbohms-an-ancestral-research-trip-to-zwolen-poland.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="331">
+                <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publish.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/publish.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CNAME" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CNAME">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CNAME" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/extra/CNAME">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>[^\*]\\\*</find>
+      <find>hostbot</find>
+      <find>nest.css</find>
+      <find />
+      <find>.table</find>
+      <find>learning s</find>
+      <find>logi</find>
+      <find>still a</find>
+      <find>scoring model</find>
+      <find>heuristic</find>
+      <find>HostBot</find>
+      <find>thir</find>
+      <find>paper</find>
+      <find>are the day</find>
+      <find>min</find>
+      <find>pt</find>
+      <find>font-size</find>
+      <find>the more</find>
+      <find>360</find>
+      <find>extra</find>
+      <find>results</find>
+      <find>respec</find>
+      <find>info</find>
+      <find>zbign</find>
+      <find>style</find>
+      <find>**</find>
+      <find>infobox country</find>
+      <find>library</find>
+      <find>infobox</find>
+      <find>master</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>style=&quot;width:$1 px&quot;</replace>
+      <replace>style=&quot;width:$1px&quot;</replace>
+      <replace>style=&quot;width:$1px !important&quot;</replace>
+      <replace>{static}/images</replace>
+      <replace>Category: essays\n</replace>
+      <replace>Category: hacking\n</replace>
+      <replace>Category: research\n</replace>
+      <replace>Category: blog\n</replace>
+      <replace />
+      <replace>$1$2</replace>
+      <replace>$1</replace>
+      <replace>Category: research-notes</replace>
+      <replace>@</replace>
+      <replace>&lt;</replace>
+      <replace>&gt;</replace>
+      <replace>\$$1</replace>
+      <replace>2px 2px 2px</replace>
+      <replace>*</replace>
+      <replace>_</replace>
+      <replace>nest.scss</replace>
+      <replace>-</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/content/essays</dir>
+      <dir>$PROJECT_DIR$/content/hacking</dir>
+      <dir>$PROJECT_DIR$/content/blog</dir>
+      <dir>$PROJECT_DIR$/../pelican-themes/nest</dir>
+      <dir>$PROJECT_DIR$/content/\</dir>
+      <dir>$PROJECT_DIR$/content/research</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/content</dir>
+      <dir>$PROJECT_DIR$/../pelican-themes/nest/templates</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../pelican-themes/nest" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/output/theme/css/nest.css" />
+        <option value="$PROJECT_DIR$/content/blog/4-more-lessons-learned-from-2-years-of-healing-a-herniated-disc.md" />
+        <option value="$PROJECT_DIR$/content/essays/editing-girl-talk.md" />
+        <option value="$PROJECT_DIR$/content/blog/5-lessons-learned-from-3-months-of-healing-a-herniated-disc.md" />
+        <option value="$PROJECT_DIR$/content/essays/4-more-lessons-learned-from-2-years-of-healing-a-herniated-disc.md" />
+        <option value="$PROJECT_DIR$/content/essays/as-a-progressive-or-educated-person-you-are-more-likely-to-enact-the-pernicious-subtype-of-aversive-raciscm.md" />
+        <option value="$PROJECT_DIR$/content/blog/2013-numeric-year-in-review.md" />
+        <option value="$PROJECT_DIR$/content/essays/manifest-dismantling-an-intention-to-enact.md" />
+        <option value="$PROJECT_DIR$/content/essays/interview-with-tadoh.md" />
+        <option value="$PROJECT_DIR$/content/research/genius-coms-curatorial-lesson-constraining-users-less-makes-them-more-collaborative.md" />
+        <option value="$PROJECT_DIR$/content/research/wikidata-and-the-measure-of-nationality-the-germanic-shift.md" />
+        <option value="$PROJECT_DIR$/content/essays/omni-radio-1-what-is-the-omni.md" />
+        <option value="$PROJECT_DIR$/content/research/opensym15.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/output/index.html" />
+        <option value="$PROJECT_DIR$/content/pages/about.md" />
+        <option value="$PROJECT_DIR$/content/essays/notconfusing-rules-for-conversation-2-rules-and-a-jumpstart.md" />
+        <option value="$PROJECT_DIR$/content/essays/universal-empathy-machine.md" />
+        <option value="$PROJECT_DIR$/content/essays/the-best-part-of-soup-is-that-soup-doesnt-have-parts.md" />
+        <option value="$PROJECT_DIR$/content/essays/should-i-do-my-phd-in-the-open.md" />
+        <option value="$PROJECT_DIR$/content/essays/prerequisite-free-set-theory-just-the-intuition.md" />
+        <option value="$PROJECT_DIR$/content/essays/book-review-23rd-century-romance.md" />
+        <option value="$PROJECT_DIR$/content/pages/research.md" />
+        <option value="$PROJECT_DIR$/content/research/a-word-for-every-lanaguage-in-every-language.md" />
+        <option value="$PROJECT_DIR$/content/research/machine-learning-in-3rd-grade.md" />
+        <option value="$PROJECT_DIR$/content/research/house-rules.md" />
+        <option value="$PROJECT_DIR$/../pelican-themes/nest/templates/page.html" />
+        <option value="$PROJECT_DIR$/../pelican-themes/nest/templates/article.html" />
+        <option value="$PROJECT_DIR$/../pelican-themes/nest/templates/category.html" />
+        <option value="$PROJECT_DIR$/content/research/against-the-grain-influencing-factors-of-opinion-change-in-wikipedias-article-for-deletion-process.md" />
+        <option value="$PROJECT_DIR$/content/research/llnl17.md" />
+        <option value="$PROJECT_DIR$/content/research/asking-ever-bigger-questions-with-wikidata.md" />
+        <option value="$PROJECT_DIR$/content/blog/3-rap-perspectives-on-turning-30.md" />
+        <option value="$PROJECT_DIR$/content/blog/for-harry-and-carie-on-their-wedding-day.md" />
+        <option value="$PROJECT_DIR$/content/blog/how-a-small-bug-i-wrote-started-helping-holocaust-deniers.md" />
+        <option value="$PROJECT_DIR$/content/blog/u-and-why-part-2-snow-bike-and-the-seven-identities.md" />
+        <option value="$PROJECT_DIR$/content/blog/highest-recommendations.md" />
+        <option value="$PROJECT_DIR$/content/pages/yoga.md" />
+        <option value="$PROJECT_DIR$/content/hacking/preliminary-results-from-wigi-the-wikipedia-gender-inequality-index.md" />
+        <option value="$PROJECT_DIR$/content/pages/hostbot-ai.md" />
+        <option value="$PROJECT_DIR$/../pelican-themes/nest/templates/base.html" />
+        <option value="$PROJECT_DIR$/../pelican-themes/nest/static/css/nest.css" />
+        <option value="$PROJECT_DIR$/publishconf.py" />
+        <option value="$PROJECT_DIR$/CNAME" />
+        <option value="$PROJECT_DIR$/pelicanconf.py" />
+        <option value="$PROJECT_DIR$/content/extra/CNAME" />
+        <option value="$PROJECT_DIR$/content/research/hostbot-ai.md" />
+        <option value="$PROJECT_DIR$/content/research/kumusha-takes-wiki-actionable-metrics-for-uganda-and-cote-divoire.md" />
+        <option value="$PROJECT_DIR$/publish.sh" />
+        <option value="$PROJECT_DIR$/content/blog/kleins-search-for-klajnbohms-an-ancestral-research-trip-to-zwolen-poland.md" />
+        <option value="$PROJECT_DIR$/Makefile" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
+    <option name="width" value="1920" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="notconfusing.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notconfusing" type="9c53a853:ProjectViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="notconfusing.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notconfusing" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="notconfusing.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notconfusing.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notconfusing" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="notconfusing.com" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notconfusing.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notconfusing.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nest" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notconfusing.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nest" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notconfusing.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nest" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/Makefile&#10;pub&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/publishconf.py&#10;kumu&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/output/kumusha-takes-wiki-actionable-metrics-for-uganda-and-cote-divoire.html&#10;.md&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/blog/kleins-search-for-klajnbohms-an-ancestral-research-trip-to-zwolen-poland.md&#10;make&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/Makefile&#10;kla&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/blog/kleins-search-for-klajnbohms-an-ancestral-research-trip-to-zwolen-poland.md&#10;kumush&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/research/kumusha-takes-wiki-actionable-metrics-for-uganda-and-cote-divoire.md&#10;kumusha&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/output/kumusha-takes-wiki-actionable-metrics-for-uganda-and-cote-divoire.html&#10;ost&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/research/hostbot-ai.md&#10;pelican&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/pelicanconf.py&#10;cname&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/CNAME&#10;pu&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/publishconf.py&#10;nest.&#9;FILE&#9;file:///home/paprika/workspace/pelican-themes/nest/static/css/nest.css&#10;host&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/research/hostbot-ai.md&#10;nest&#9;FILE&#9;file:///home/paprika/workspace/pelican-themes/nest/static/css/nest.css&#10;prelim&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/hacking/preliminary-results-from-wigi-the-wikipedia-gender-inequality-index.md&#10;nest.c&#9;FILE&#9;file:///home/paprika/workspace/pelican-themes/nest/static/css/nest.css&#10;how-a&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/blog/how-a-small-bug-i-wrote-started-helping-holocaust-deniers.md&#10;for-h&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/blog/for-harry-and-carie-on-their-wedding-day.md&#10;3-r&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/blog/3-rap-perspectives-on-turning-30.md&#10;asking&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/research/asking-ever-bigger-questions-with-wikidata.md&#10;against&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/research/against-the-grain-influencing-factors-of-opinion-change-in-wikipedias-article-for-deletion-process.md&#10;cat&#9;FILE&#9;file:///home/paprika/workspace/pelican-themes/nest/templates/categories.html&#10;base.&#9;FILE&#9;file:///home/paprika/workspace/pelican-themes/nest/templates/base.html&#10;header-&#9;null&#9;null&#10;nest.css&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/output/theme/css/nest.css&#10;peli&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/pelicanconf.py&#10;about.&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/pages/about.md&#10;house-&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/research/house-rules.md&#10;machine&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/research/machine-learning-in-3rd-grade.md&#10;pelic&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/pelicanconf.py&#10;research&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/pages/research.md&#10;book-r&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/essays/book-review-23rd-century-romance.md&#10;prer&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/essays/prerequisite-free-set-theory-just-the-intuition.md&#10;should-&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/essays/should-i-do-my-phd-in-the-open.md&#10;the-be&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/essays/the-best-part-of-soup-is-that-soup-doesnt-have-parts.md&#10;universal-&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/essays/universal-empathy-machine.md&#10;notcon&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/essays/notconfusing-rules-for-conversation-2-rules-and-a-jumpstart.md&#10;about.md&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/pages/about.md&#10;about&#9;null&#9;null&#10;sneak&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/blog/sneak-peek-at-wikimedias-new-bold-high-concept-iconography.md&#10;ind&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/output/index.html&#10;index.h&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/output/index.html&#10;about.m&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/pages/about.md&#10;yoga&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/pages/yoga.md&#10;pel&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/pelicanconf.py&#10;omni&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/essays/omni-radio-1-what-is-the-omni.md&#10;as-a&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/essays/as-a-progressive-or-educated-person-you-are-more-likely-to-enact-the-pernicious-subtype-of-aversive-raciscm.md&#10;manifest&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/output/pages/manifest-distmantling-an-intention-to-enact.html&#10;abou&#9;FILE&#9;file:///home/paprika/workspace/notconfusing.com/content/pages/about.md" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pelican-themes/nest" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../pelican-themes/nest/static/css" />
+      <recent name="$PROJECT_DIR$/content/images/uploads/2014/06" />
+      <recent name="$PROJECT_DIR$/content/pages" />
+      <recent name="$PROJECT_DIR$/output/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/research" />
+      <recent name="$PROJECT_DIR$/content" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d635bd0-aaff-48ae-8101-f415742ac908" name="Default" comment="" />
+      <created>1575162126471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575162126471</updated>
+    </task>
+    <task id="LOCAL-00001" summary="resaerch css and making the header fit">
+      <created>1575414089879</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575414089879</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.47722343" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17022412" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="resaerch css and making the header fit" />
+    <option name="LAST_COMMIT_MESSAGE" value="resaerch css and making the header fit" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/output/sneak-peek-at-wikimedias-new-bold-high-concept-iconography.html" />
+    <entry file="file://$PROJECT_DIR$/content/blog/sneak-peek-at-wikimedias-new-bold-high-concept-iconography.md" />
+    <entry file="file://$PROJECT_DIR$/content/pages/selected-publications.md" />
+    <entry file="file://$PROJECT_DIR$/../newcomerquality/newcomerquality/about.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/essays/notconfusing-rules-for-conversation-2-rules-and-a-jumpstart.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="54">
+            <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/essays/universal-empathy-machine.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="144">
+            <caret line="8" column="146" selection-start-line="8" selection-start-column="146" selection-end-line="8" selection-end-column="146" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/essays/the-best-part-of-soup-is-that-soup-doesnt-have-parts.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="162">
+            <caret line="9" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/essays/should-i-do-my-phd-in-the-open.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="720">
+            <caret line="40" selection-start-line="40" selection-end-line="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/essays/prerequisite-free-set-theory-just-the-intuition.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="234">
+            <caret line="13" selection-start-line="13" selection-end-line="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/essays/book-review-23rd-century-romance.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/pages/research.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="10" column="81" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="81" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/research/machine-learning-in-3rd-grade.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="198">
+            <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/research/house-rules.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/pages/about.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="12" selection-start-column="12" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pelican-themes/nest/templates/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="8" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pelican-themes/nest/templates/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pelican-themes/nest/templates/categories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/research/against-the-grain-influencing-factors-of-opinion-change-in-wikipedias-article-for-deletion-process.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pelican-themes/nest/templates/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/research/llnl17.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="10" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/research/asking-ever-bigger-questions-with-wikidata.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="118">
+            <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/blog/3-rap-perspectives-on-turning-30.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="486">
+            <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/blog/for-harry-and-carie-on-their-wedding-day.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="234">
+            <caret line="13" selection-start-line="13" selection-end-line="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/blog/how-a-small-bug-i-wrote-started-helping-holocaust-deniers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="478">
+            <caret line="56" selection-start-line="56" selection-end-line="56" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/blog/u-and-y-part-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/blog/highest-recommendations.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/blog/4-more-lessons-learned-from-2-years-of-healing-a-herniated-disc.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret line="120" column="641" selection-start-line="120" selection-start-column="640" selection-end-line="120" selection-end-column="641" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/pages/yoga.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret line="29" selection-start-line="29" selection-end-line="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/drafts/pages/4266.html" />
+    <entry file="file://$PROJECT_DIR$/output/drafts/pages/hostbot-ai.html" />
+    <entry file="file://$PROJECT_DIR$/content/blog/u-and-why-part-2-snow-bike-and-the-seven-identities.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="508">
+            <caret line="20" selection-start-line="20" selection-end-line="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pelican-themes/nest/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/theme/css/nest.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="455" lean-forward="true" selection-start-line="455" selection-end-line="455" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pelican-themes/nest/static/css/nest.sass" />
+    <entry file="file://$PROJECT_DIR$/../pelican-themes/nest/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="4" column="2911" selection-start-line="4" selection-start-column="2863" selection-end-line="4" selection-end-column="2911" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/theme/css/nest.scss" />
+    <entry file="file://$PROJECT_DIR$/content/images/hb_gradient_boost.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/hacking/preliminary-results-from-wigi-the-wikipedia-gender-inequality-index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pelican-themes/nest/static/css/nest.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/research/a-word-for-every-lanaguage-in-every-language.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="54">
+            <caret line="3" column="20" selection-start-line="3" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/research/hostbot-ai.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3636">
+            <caret line="201" selection-start-line="201" selection-end-line="201" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publish.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/extra/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/blog/kleins-search-for-klajnbohms-an-ancestral-research-trip-to-zwolen-poland.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="331">
+            <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/research/kumusha-takes-wiki-actionable-metrics-for-uganda-and-cote-divoire.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="313">
+            <caret line="2125" column="323" selection-start-line="2125" selection-start-column="323" selection-end-line="2125" selection-end-column="323" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/kleins-search-for-klajnbohms-an-ancestral-research-trip-to-zwolen-poland.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="102" column="82" selection-start-line="102" selection-start-column="82" selection-end-line="102" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#10;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#12;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#14;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#p#16;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#19;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#21;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#25;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#26;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#27;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#30;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#p#31;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/kumusha-takes-wiki-actionable-metrics-for-uganda-and-cote-divoire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="2126" column="3" lean-forward="true" selection-start-line="2126" selection-start-column="3" selection-end-line="2126" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publishconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -55,7 +55,7 @@ EXTRA_PATH_METADATA = {
 
 INDEX_SAVE_AS = 'blog_index.html'
 
-THEME = "/home/paprika/workspace/pelican-themes/nest"
+THEME = "../pelican-themes/nest"
 
 # NEST Template
 SITESUBTITLE = u"The world might be complex, but it's not confusing"

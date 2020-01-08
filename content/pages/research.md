@@ -2,7 +2,7 @@ Title: Research
 Date: 2019-12-1 20:13
 Author: max
 Slug: research
-Status: published
+Status: draft
 
 Everything that's not destined for peer-review.
 > [*DIY Research Notes*](/category/research)

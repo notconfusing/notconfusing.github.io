@@ -2,7 +2,7 @@ Title: Yoga
 Date: 2015-05-17 05:14
 Author: max
 Slug: yoga
-Status: published
+Status: draft
 
 Bio
 ===

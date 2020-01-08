@@ -1,2 +1,6 @@
 .idea
 output/*
+
+__pycache__/
+
+output/

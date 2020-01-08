@@ -1,7 +1,7 @@
 /*!
  * Nest v1.0.0 (http://www.molivier.com)
  * Copyright 2015 Matthieu OLIVIER
- * Licensed under Apache V2 (https://github.com/molivier/nest/blob/master/LICENSE)
+ * Licensed under GPL V2 (https://github.com/molivier/nest/blob/master/LICENSE)
  */
 
 /* Responsive */
@@ -12,12 +12,12 @@
 }
 @media (min-width: 992px) {
   .container {
-    width: 800px;
+    width: 850px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 900px;
+    width: 850px;
   }
 }
 
@@ -32,21 +32,18 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-p {
-    font-size: 13pt;
-}
 /* Links */
 /* eb2344*/
 /* 009bff*/
 /* CE2323 */
-a, a:visited {
-    color: #eb2344;
-    text-decoration: none;
+a, a:visited { 
+    color: #eb2344; 
+    text-decoration: none; 
     transition: all 0.2s ease-out;
 }
-a:hover, a:active{
-    text-decoration:underline;
-    color:#eb2344;
+a:hover, a:active{ 
+    text-decoration:underline; 
+    color:#eb2344; 
 /*    opacity: 0.8; */
 }
 
@@ -61,7 +58,6 @@ a.navigate{
     font-weight: 600;
     color:#fff;
     text-decoration: none;
-    text-shadow: 2px 2px 2px black;
 }
 a.navigate:hover{
     opacity: 0.8;
@@ -83,7 +79,7 @@ pre, code {
     border-radius: 0px;
     color: #4b505a;
     margin: 34px 0;
-    font-weight: 700;
+    font-weight: 700; 
 }
 
 code { padding: 3px 6px; }
@@ -111,7 +107,7 @@ code { padding: 3px 6px; }
   padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  background:#333;
+  background:#333; 
   font-size: 14px;
   font-weight: 400;
   font-family: Consolas, monaco, monospace;
@@ -120,19 +116,19 @@ code { padding: 3px 6px; }
 
 /* Titles */
 
-h1 {
+h1 { 
     font-size: 28px;
-    line-height: 1.285714285714286em;
+    line-height: 1.285714285714286em; 
     font-weight: 600;
     letter-spacing: 2px;
     border:none;
 }
 
-h2 {
+h2 { 
     font-size: 20px;
-    line-height: 1.285714285714286em;
+    line-height: 1.285714285714286em; 
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 40px;   
     margin-bottom: 40px;
 }
 h2:after {
@@ -144,11 +140,11 @@ h2:after {
     /*border-bottom: 3px solid rgba(0,0,0,0.2);*/
 }
 
-h3 {
+h3 { 
     font-size: 16px;
-    line-height: 1.285714285714286em;
+    line-height: 1.285714285714286em; 
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 30px; 
     margin-bottom: 30px;
 }
 h3:after {
@@ -159,11 +155,11 @@ h3:after {
     border-bottom: 3px solid rgba(235,35,68,1);
 }
 
-h4 {
+h4 { 
     font-size: 12px;
-    line-height: 1.285714285714286em;
+    line-height: 1.285714285714286em; 
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 30px; 
     margin-bottom: 30px;
     text-transform: uppercase;
 }
@@ -172,15 +168,15 @@ h4:after {
     content: " ";
     margin-top: 10px;
     width: 40px;
-    border-bottom: 3px solid rgba(0,0,0,0.2);
+    border-bottom: 3px solid rgba(0,0,0,0.2);    
 }
 
 /* Navbar */
 .header-nav{
-    height:36px;
-    line-height:36px;
+    height:100px;
+    line-height:100px;
     color:#fff;
-    font-size: 15px;
+    font-size:12px;
     font-weight:600;
 }
 .header-nav .nav{
@@ -194,44 +190,35 @@ h4:after {
     margin-left:20px;
     text-transform: uppercase;
     transition: all 0.2s ease-out;
-    text-shadow: 1px 1px 3px black;
 }
 .header-nav .nav a:hover{
     color:#fff;
-    font-weight:700;
+    font-weight:600;
     opacity: 1;
     background-color: rgba(0,0,0,0.2);
-    font-size: 12pt;
-
 }
 .header-nav .nav .active{
     /*color:#fff;*/
     color:#fff;
-    font-weight:700;
+    font-weight:600;
     background-color: rgba(0,0,0,0.2);
-    text-shadow: 2px 2px 2px black;
-    font-size: 15pt;
 }
 .header-logo {
-    font-size:12pt;
+    font-size:15px;
     font-weight:600;
     text-transform: uppercase;
 }
-.header-logo img {
-    width: 12pt;
-}
 .header-logo a {
-color: #fff;
-text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Header */
 
 .header-container {
-    background: #f5f5f5 no-repeat;
+    background: #f5f5f5;
     padding: 0;
-    min-height: 240px;
-    max-height: 360px;
+    min-height: 360px;
 }
 .header-wrapper{
     padding-left: 40px;
@@ -239,33 +226,31 @@ text-decoration: none;
 }
 .header-content {
     text-align: center;
-    padding: 0px 0 0px 0;
+    padding: 25px 0 55px 0;
 }
 .header-title {
-    font-size: 20px;
+    font-size: 28px;
     color: #fff;
     font-weight: 700;
-    text-shadow: 2px 2px 2px black;
 }
 .header-date {
-    margin-top: 12px;
+    margin-top: 15px;
     font-size: 12px;
     color: #fff;
-    opacity: 0.9;
-    text-shadow: 2px 2px 2px black;
+    opacity: 0.8;
 
 }
 .header-date a {
     color: #fff;
     text-decoration: underline;
 }
-/*.header-underline {*/
-    /*display: inline-block;*/
-    /*margin-top: 10px;*/
-    /*margin-bottom: 15px;*/
-    /*width: 50px;*/
-    /*border-bottom: 3px solid #eb2344;*/
-/*}*/
+.header-underline {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 50px;
+    border-bottom: 3px solid #eb2344;
+}
 .header-subtitle {
     font-size: 14px;
     line-height: 24px;
@@ -284,7 +269,6 @@ text-decoration: none;
 }
 .header-tags a {
     color: #fff;
-    background-color: black;
 }
 
 /* Content */
@@ -318,7 +302,7 @@ text-decoration: none;
 .content dt{
     font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 24px;    
 }
 
 /* Navigation */
@@ -339,7 +323,7 @@ text-decoration: none;
 }
 .menu h4{
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;  
 }
 .menu a{
   color: #fff;
@@ -354,7 +338,7 @@ text-decoration: none;
 
 /* Article */
 .article-container{
-    margin-top: 40px;
+    margin-top: 40px; 
 }
 .article {
     font-size: 14px;
@@ -367,7 +351,7 @@ text-decoration: none;
 }
 .article h2{
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;  
 }
 .article h2 a{
     color: #4b505a;
@@ -376,13 +360,13 @@ text-decoration: none;
 .article .date{
     font-size: 12px;
     margin-bottom: 10px;
-    opacity: 0.9;
+    opacity: 0.9;  
 }
 
 /* Archives */
 .archive-container{
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
 }
 .archive {
     font-size: 14px;
@@ -394,7 +378,7 @@ text-decoration: none;
 }
 .archive h2{
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }
 .archive h2 a{
     color: #4b505a;
@@ -403,7 +387,7 @@ text-decoration: none;
 .archive dt{
     font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 24px;    
 }
 /* Styling */
 

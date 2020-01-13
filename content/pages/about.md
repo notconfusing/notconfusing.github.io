@@ -2,7 +2,7 @@ Title: About
 Date: 2015-05-18 20:13
 Author: max
 Slug: about
-Status: published
+Status: draft
 save_as: index.html
 
 > [Download Résumé](https://spideroak.com/share/JVQXQLKLNRSWS3RNINLHG/Online-CVs/home/paprika/SpiderOak%20Hive/CVs/Online-CVs/Max%20Klein%20Resume.pdf) \| [Academic CV](https://spideroak.com/share/JVQXQLKLNRSWS3RNINLHG/Online-CVs/home/paprika/SpiderOak%20Hive/CVs/Online-CVs/CV%20Max%20Klein.pdf) \| [Twitter](https://twitter.com/notconfusing) \| [LinkedIn](https://www.linkedin.com/in/notconfusing)

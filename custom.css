@@ -6,3 +6,7 @@ img.size-full, img.size-large, .wp-post-image, .post-thumbnail img {
 header.container {
 	max-height: 240px;
 }
+
+.container content {
+line-height: 1.75;
+}

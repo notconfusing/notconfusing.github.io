@@ -22,6 +22,7 @@ The role of community UX Researcher is to facilitate the co-design process of cr
 
   [![Alt text]({static}/images/jd-fse.png){style="width:145px !important;  float: right; margin:0px;"}](/images/Frontend_Software_Engineer.pdf)
 
-The role of the software engineer is to build the humaniki web-app in collaboration with the lead engineer. After familiarizing yourself with the technical history of the project, and receiving the design specification from our community UX researcher you will give input into the stack and architecture. You develop web and data-visualization features and make them ready for user testing, as part of an iterative development cycle. Supporting a launch of the tool, you monitor and fix bugs to make the application is robust for users.
+The role of the software engineer is to build the humaniki web-app in collaboration with the backend engineer and UX researcher. After receiving the design specification from our community UX researcher, you will give input into the stack and architecture. You develop web and data-visualization features to make them ready for user testing, as part of an iterative development cycle. Supporting a launch of the tool, you monitor and fix bugs to make sure the application is robust for users. 
+
 
 **[Job Description PDF](/images/Frontend_Software_Engineer.pdf)**

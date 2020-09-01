@@ -16,7 +16,7 @@ I work for [CivilServant](http://civilservant.io/) where I realize, in code, fie
 On this blog though I share my own opinions, observations, and research.
 
 + [Essays](/category/essays) are more serious philosophy and self-study
-+ [Research](/pages/research) stores my analyses not bound for publication elsewhere
++ [Research](/category/research-notes) stores my analyses not bound for publication elsewhere
 + [Blog](/category/blog) is where I write about any old tedium
 + [Hacking](/category/blog) contains some of my open source tutorials and project write-ups.
 

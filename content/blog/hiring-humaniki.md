@@ -5,7 +5,9 @@ Category: blog
 Slug: hiring-for-humaniki
 Status: published
 
-# Introducing humaniki and it's team needs
+# UPDATE: September 1 2020. Both positions have been filled, thank you for your interest.
+
+## Introducing humaniki and its team needs
 Today I'm hiring a __UX Researcher__ and __Frontend Engineer__ for **humaniki** a new project to create data tools describing the diversity of humans represented in Wikimedia projects, and assisting editors to close gaps. I started this journey five years with the [Wikidata Human Gender Indicators](http://whgi.wmflabs.org/), and now I'm excited to make the next iteration, which hopefully will be more useful and actionable for users. The purpose of hiring these roles is to two-fold. One is to have team members focus specific attention on using *participatory* design involving the Wikimedia community. The second is to create a diverse team - given my own positionality - so that the process of development - and distribution of grant funds - can reflect the purpose of the tool. 
 Let's make the data diversity dashboards and APIs that Wikimedians deserve. This project is a Wikimedia Foundation-funded grant, learn more at: [https://meta.wikimedia.org/wiki/Grants:Project/Maximilianklein/humaniki]().
 

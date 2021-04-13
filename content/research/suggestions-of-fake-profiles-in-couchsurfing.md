@@ -2,7 +2,7 @@ Title: Suggestions of Fake Profiles in Couchsurfing
 Date: 2016-06-25 19:52
 Author: max
 Category: research-notes
-Slug: suggestions-of-fake-profiles-in-couchsurfing
+Slug: suggestions-of-fake-profiles-in-couchsurfing/
 Status: published
 
 I have been investigating profiles of users of *Airbnb* and *Couchsurfing* this year as research into personality differences between users of market- and socially-based network hospitality websites. Along the way I have uncovered some suggestive data supporting a rumor that Couchsurfing may have been manipulating the size of its user-base through fake profiles.

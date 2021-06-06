@@ -10,3 +10,6 @@ header.container {
 .container content {
 line-height: 1.75;
 }
+p {
+margin: 0 0 5pt; !important;
+}

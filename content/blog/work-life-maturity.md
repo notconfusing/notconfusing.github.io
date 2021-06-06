@@ -1,7 +1,7 @@
 Title: The Programmer's Career Choices Form A Pareto Curve, And That Is Privilege.
 Date: 2021-04-28 22:07
 Author: max
-Category: blog
+Category: essays
 Slug: work-life-maturity
 Status: published
 

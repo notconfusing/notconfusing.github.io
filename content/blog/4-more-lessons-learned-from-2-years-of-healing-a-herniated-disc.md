@@ -5,7 +5,7 @@ Category: blog
 Slug: 4-more-lessons-learned-from-2-years-of-healing-a-herniated-disc
 Status: published
 
-If you are reading this I imagine it’s because you are suffering yourself from a herniated disc. I was there too, and still am 2 years later. While I’m not a doctor, and ask you not to take this as medical advice, I hope you might gain something from my experience. My [first five lessons](http://notconfusing.com/5-lessons-learned-from-3-months-of-healing-a-herniated-disc/) that I wrote when I was just 3 months in remain cogent and apt, are a story without an ending. As the injury transitions into a memory rather than an urgent priority, I should leave this map for who ever finds it useful.
+If you are reading this I imagine it’s because you are suffering yourself from a herniated disc. I was there too, and still am 2 years later. While I’m not a doctor, and ask you not to take this as medical advice, I hope you might gain something from my experience. My [first five lessons](http://notconfusing.com/5-lessons-learned-from-3-months-of-healing-a-herniated-disc) that I wrote when I was just 3 months in remain cogent and apt, are a story without an ending. As the injury transitions into a memory rather than an urgent priority, I should leave this map for who ever finds it useful.
 
 1. Recovery has an unintuitive shape.
 -------------------------------------

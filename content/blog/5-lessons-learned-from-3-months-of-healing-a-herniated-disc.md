@@ -5,7 +5,7 @@ Category: blog
 Slug: 5-lessons-learned-from-3-months-of-healing-a-herniated-disc
 Status: published
 
-I suffered a herniated disc by foolish jumping off a large drop while camping. It has been the most serious injury of my life to date. As it  invaded almost every aspect of my life, my mood, my career, my friendships, it gave me lots of pause to reflect. This is what learned and wrote after 3 months. However in the end it took me 2 years to be pain free, at which point I wrote a follow up “[5 more lessons learned](http://notconfusing.com/?p=4206)” which also contains more practical lessons than the more abstracted ones here.
+I suffered a herniated disc by foolish jumping off a large drop while camping. It has been the most serious injury of my life to date. As it  invaded almost every aspect of my life, my mood, my career, my friendships, it gave me lots of pause to reflect. This is what learned and wrote after 3 months. However in the end it took me 2 years to be pain free, at which point I wrote a follow up “[4 more lessons learned](https://notconfusing.com/4-more-lessons-learned-from-2-years-of-healing-a-herniated-disc)” which also contains more practical lessons than the more abstracted ones here.
 
 1. The thing you can't do is sitting.
 -------------------------------------

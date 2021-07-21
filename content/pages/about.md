@@ -5,7 +5,8 @@ Slug: about
 Status: draft
 save_as: index.html
 
-> [Download Résumé](https://spideroak.com/share/JVQXQLKLNRSWS3RNINLHG/Online-CVs/home/paprika/SpiderOak%20Hive/CVs/Online-CVs/Max%20Klein%20Resume.pdf) \| [Academic CV](https://spideroak.com/share/JVQXQLKLNRSWS3RNINLHG/Online-CVs/home/paprika/SpiderOak%20Hive/CVs/Online-CVs/CV%20Max%20Klein.pdf) \| [Twitter](https://twitter.com/notconfusing) \| [LinkedIn](https://www.linkedin.com/in/notconfusing)
+[comment]: <> (> [Download Résumé]&#40;https://spideroak.com/share/JVQXQLKLNRSWS3RNINLHG/Online-CVs/home/paprika/SpiderOak%20Hive/CVs/Online-CVs/Max%20Klein%20Resume.pdf&#41; \| [Academic CV]&#40;https://spideroak.com/share/JVQXQLKLNRSWS3RNINLHG/Online-CVs/home/paprika/SpiderOak%20Hive/CVs/Online-CVs/CV%20Max%20Klein.pdf&#41; \| [Twitter]&#40;https://twitter.com/notconfusing&#41; \| [LinkedIn]&#40;https://www.linkedin.com/in/notconfusing&#41;)
+> [Download Résumé](https://onedrive.live.com/?authkey=%21ACdClAw%5FiHaWeDs&cid=D3A39657421B9E1E&id=D3A39657421B9E1E%219230&parId=D3A39657421B9E1E%211293&o=OneUp){:target="_blank"}  \| [Twitter](https://twitter.com/notconfusing) \| [LinkedIn](https://www.linkedin.com/in/notconfusing)
 
 Hello, I am *Maximilian Klein*, data scientist, yogi, fuzzy logician, conversationalist, wikipedian, white- and male-privilege identified, poet, freegan, cyclist, anti-anthropocentrist, experimentalist and dilettante.
 

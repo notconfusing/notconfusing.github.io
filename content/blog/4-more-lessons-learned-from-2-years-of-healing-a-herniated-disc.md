@@ -29,7 +29,8 @@ I best understood what pain was doing to my psyche when I heard pain described a
 
 For instance after 6 months I began to notice that I hadn’t even really researched how to best heal my condition beyond a single visit to the doctor—and I am a professional researcher. I realized I hadn’t conducted real experiments with equipment, exercise or diet. Being in pain, I would simply lay on the floor and try to distract myself TV. While it was immediately relieving, I don’t think it was the maximum “healing” it could have been if I approached it with a clear mind. Once my focus returned in drips and drabs I was able to really try to troubleshoot the herniation. In parts 3 and 4 I share every technique tip and hack that I attempted, but there is one more than others that deserves special attention—laying down.
 
-### 3. Radical laying down.
+3. Radical laying down.
+------------------------
 
 Research shows that laying down is the position that puts the least pressure on the inter-spinal discs \[[1](http://journals.lww.com/spinejournal/Abstract/1999/04150/New-In-Vivo-Measurements-of-Pressures-in-the.5.aspx)\]. So I did that as much as possible—and more than what is perhaps "normal" in polite society. In general the question of my life became, "can I do it laying down?"
 
@@ -102,7 +103,7 @@ In addition to Naproxen, here are the other over-the-counter and holistic remedi
 -   Valerian root
     -   Similar to cannabis, in but lighter and more reliable. Valerian root tea was at times a to partial escape the mental strain of the pain trap, without psycoactivity, but still drowsiness.
 
-#### Equipment
+### Equipment
 
 -   Inversion table
     -   I bought a cheap inversion table off of Craigslist after seeing it recommended on Remi Sovran's [herniated disc tips youtube channel](https://www.youtube.com/user/RemiSovranFitness). I did manage to find a small amount of temporary relief upside-downing myself. I believe in gentler inclines for longer intervals than Remi's recommendations.

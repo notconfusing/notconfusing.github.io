@@ -5,7 +5,7 @@ Slug: about
 Status: draft
 save_as: index.html
 
-> [Download Résumé](https://1drv.ms/b/s!Ah6eG0JXlqPTgsJ6MIJPasSZ5J_xyQ?e=560dnh){:target="_blank"}  \| [Twitter](https://twitter.com/notconfusing) \| [LinkedIn](https://www.linkedin.com/in/notconfusing)
+> [Download Résumé](https://1drv.ms/b/s!Ah6eG0JXlqPTguAhHThSlbe5ZCZvow?e=3A0DB7){:target="_blank"}  \| [Twitter](https://twitter.com/notconfusing) \| [LinkedIn](https://www.linkedin.com/in/notconfusing)
 
 Hello, I am *Maximilian Klein*, data scientist, yogi, fuzzy logician, conversationalist, wikipedian, white- and male-privilege identified, poet, freegan, cyclist, anti-anthropocentrist, experimentalist and dilettante.
 
